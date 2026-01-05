@@ -1,4 +1,4 @@
-﻿@import "tailwindcss";
+@import "tailwindcss";
 
 :root {
     --card-bg: #F9F9FB;
@@ -41,6 +41,7 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    position: relative;
 }
 
 .logo {
@@ -63,6 +64,9 @@ header {
     display: flex;
     align-items: center;
     gap: 32px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .nav-links {
@@ -82,6 +86,8 @@ header {
 
 .nav-links a:hover { opacity: 1; color: var(--orange); }
 
+
+.nav-links a.is-active { opacity: 1; color: var(--orange); }
 .btn-header {
     background: #F3F4F6;
     color: var(--black);
@@ -94,6 +100,14 @@ header {
 }
 
 .btn-header:hover { background: var(--black); color: white; }
+
+.btn-header-desktop {
+    margin-left: auto;
+}
+
+.btn-header-mobile {
+    display: none;
+}
 
 .nav-toggle {
     position: absolute;
@@ -124,7 +138,8 @@ header {
 }
 
 @media (max-width: 900px) {
-    .nav-container { position: relative; }
+    .btn-header-desktop { display: none; }
+    .btn-header-mobile { display: inline-block; }
     .nav-links { flex-direction: column; gap: 18px; }
     .nav-menu {
         position: absolute;
@@ -140,6 +155,7 @@ header {
         align-items: stretch;
         gap: 16px;
         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+        transform: none;
     }
     .nav-menu .btn-header { text-align: center; }
     .nav-toggle-btn { display: flex; }
@@ -148,7 +164,6 @@ header {
     .nav-toggle:checked + .nav-toggle-btn span:nth-child(2) { opacity: 0; }
     .nav-toggle:checked + .nav-toggle-btn span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 }
-
 /* --- Hero Container --- */
 .hero-section {
     padding: 80px 5% 80px;
@@ -334,6 +349,8 @@ header {
 }
 
 @media (max-width: 900px) {
+    .btn-header-desktop { display: none; }
+    .btn-header-mobile { display: inline-block; }
     .app-visual-grid { grid-template-columns: 1fr; }
     .card-center { transform: scale(1); }
 }
@@ -652,7 +669,9 @@ header {
 .btn-browse:hover { background: var(--orange); box-shadow: 0 15px 30px rgba(243, 70, 36, 0.25); transform: translateY(-2px); }
 
 @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
-@media (max-width: 900px) { .premium-grid { grid-template-columns: 1fr; } }
+@media (max-width: 900px) {
+    .btn-header-desktop { display: none; }
+    .btn-header-mobile { display: inline-block; } .premium-grid { grid-template-columns: 1fr; } }
 
 /* =========================================
    4. STEP SECTION STYLES
@@ -766,6 +785,8 @@ header {
 }
 
 @media (max-width: 900px) {
+    .btn-header-desktop { display: none; }
+    .btn-header-mobile { display: inline-block; }
     .timeline-wrapper { flex-direction: column; gap: 50px; }
     .timeline-track {
         width: 2px;
@@ -1344,6 +1365,10 @@ header {
     .footer-modules { grid-template-columns: 1fr; }
     .footer-bar { flex-direction: column-reverse; gap: 15px; }
 }
+
+
+
+
 
 
 

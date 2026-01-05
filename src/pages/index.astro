@@ -1,37 +1,38 @@
-ï»¿---
+---
 import Base from "../layouts/Base.astro";
 ---
 
 <Base>
   <!-- 1. Header (Part of Hero file) -->
   <header>
-  <nav class="nav-container">
-    <a href="#" class="logo">Gro<span>Pulse</span></a>
-    <div class="nav-right">
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-      <div class="nav-menu">
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Apps</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
-        <a href="#" class="btn-header">Log in</a>
+    <nav class="nav-container">
+      <a href="/" class="logo">Gro<span>Pulse</span></a>
+      <div class="nav-right">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="/" class="is-active">Home</a></li>
+            <li><a href="/apps/">Apps</a></li>
+            <li><a href="/apps/analyzely/#pricing">Pricing</a></li>
+            <li><a href="/apps/analyzely/#support">Support</a></li>
+          </ul>
+          <a href="/apps/" class="btn-header btn-header-mobile">Log in</a>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
+      <a href="/apps/" class="btn-header btn-header-desktop">Log in</a>
+    </nav>
+  </header>
 
   <!-- 1. Hero Section -->
   <section class="hero-section">
     <!-- Trust Badge -->
     <div class="trust-badge">
-      <span>? Trusted by 10,000+ Stores</span>
+      <span>&#10024; Trusted by 10,000+ Stores</span>
     </div>
 
     <div class="hero-content">
@@ -42,9 +43,9 @@ import Base from "../layouts/Base.astro";
       </p>
 
       <div class="cta-box">
-        <a href="#" class="btn-main">Explore Our Apps</a>
+        <a href="/apps/" class="btn-main">Explore Our Apps</a>
         <div class="review-text">
-          Excellent <span class="stars">?????</span> <strong>4.9/5</strong>
+          Excellent <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <strong>4.9/5</strong>
           based on 769+ reviews
         </div>
       </div>
@@ -54,7 +55,7 @@ import Base from "../layouts/Base.astro";
     <div class="app-visual-grid">
       <!-- App 1: Conversion Focus -->
       <div class="app-card">
-        <div class="app-icon" style="color: #2563EB;">??</div>
+        <div class="app-icon" style="color: #2563EB;">&#128640;</div>
         <h3>Conversion Boost</h3>
         <p>Maximize your sales with high-impact upsell and cross-sell tools.</p>
         <div class="mini-stat-box">
@@ -74,13 +75,13 @@ import Base from "../layouts/Base.astro";
         class="app-card card-center"
         style="border-bottom: 4px solid var(--orange);"
       >
-        <div class="app-icon" style="background: #fff3f1; color: var(--orange);">??</div>
+        <div class="app-icon" style="background: #fff3f1; color: var(--orange);">&#128202;</div>
         <h3>Growth Hub</h3>
         <p>A central dashboard to manage and automate all your store operations.</p>
         <div class="mini-stat-box" style="background: #FFFFFF;">
           <div class="stat-line">
             <span class="stat-label">Sync Status</span>
-            <span class="stat-value" style="color: #10B981;">? Live</span>
+            <span class="stat-value" style="color: #10B981;">&#9679; Live</span>
           </div>
           <div class="stat-line">
             <span class="stat-label">Performance</span>
@@ -91,7 +92,7 @@ import Base from "../layouts/Base.astro";
 
       <!-- App 3: Customization/SEO -->
       <div class="app-card">
-        <div class="app-icon" style="color: #10B981;">?</div>
+        <div class="app-icon" style="color: #10B981;">&#9889;</div>
         <h3>Speed & SEO</h3>
         <p>Optimize your store speed and search ranking for better visibility.</p>
         <div class="mini-stat-box">
@@ -117,14 +118,14 @@ import Base from "../layouts/Base.astro";
       <!-- Label & Heading -->
       <div class="header-content">
         <div class="trust-badge">
-          <span>? Our Solutions</span>
+          <span>&#10024; Our Solutions</span>
         </div>
         <h2>
           Built to solve your daily<br />
           Shopify <span>challenges</span>
         </h2>
         <p>
-          We build tools that solve real merchant problemsâ€”saving you time to<br />
+          We build tools that solve real merchant problems—saving you time to<br />
           focus on growing your brand.
         </p>
       </div>
@@ -243,7 +244,7 @@ import Base from "../layouts/Base.astro";
     <div class="container">
       <!-- Header -->
       <div class="section-intro">
-        <div class="label-badge">? Featured Apps</div>
+        <div class="label-badge">&#10024; Featured Apps</div>
         <h2>The core of your store's <span>growth</span></h2>
         <p>High-performance tools to automate, track, and scale your business.</p>
       </div>
@@ -253,7 +254,7 @@ import Base from "../layouts/Base.astro";
         <!-- 1. Analyzely -->
         <div class="modern-card">
           <div class="card-body">
-            <div class="m-icon">??</div>
+            <div class="m-icon">&#128202;</div>
             <h3>Analyzely - GA4</h3>
             <p>Precise Google Analytics 4 tracking with server-side accuracy.</p>
           </div>
@@ -262,7 +263,7 @@ import Base from "../layouts/Base.astro";
             <div class="mini-dash">
               <div class="md-header">
                 <span class="md-label">Real-time Overview</span>
-                <span class="md-live">? Live</span>
+                <span class="md-live">&#9679; Live</span>
               </div>
               <div class="md-grid">
                 <div class="md-box">
@@ -284,8 +285,8 @@ import Base from "../layouts/Base.astro";
         <!-- 2. Pixee -->
         <div class="modern-card">
           <div class="card-body">
-            <div class="m-icon">??</div>
-            <h3>Pixee â€“ FB Pixels</h3>
+            <div class="m-icon">&#127919;</div>
+            <h3>Pixee – FB Pixels</h3>
             <p>Multi-pixel management to supercharge your ad campaigns.</p>
           </div>
           <!-- Visual Layer: Pixel Table -->
@@ -314,7 +315,7 @@ import Base from "../layouts/Base.astro";
         <!-- 3. Google Reviews -->
         <div class="modern-card">
           <div class="card-body">
-            <div class="m-icon">?</div>
+            <div class="m-icon">&#11088;</div>
             <h3>Google Reviews</h3>
             <p>Showcase real trust with Google Reviews on your store.</p>
           </div>
@@ -323,7 +324,7 @@ import Base from "../layouts/Base.astro";
             <div class="mini-review">
               <div class="mr-top">
                 <div class="g-brand"><span class="g-icon">G</span> 4.9 Rating</div>
-                <div class="mr-stars">?????</div>
+                <div class="mr-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
               </div>
               <p class="mr-text">"Amazing product quality! Fast shipping..."</p>
               <div class="mr-user">
@@ -340,7 +341,7 @@ import Base from "../layouts/Base.astro";
         <!-- 4. GTM & Data Layer -->
         <div class="modern-card">
           <div class="card-body">
-            <div class="m-icon">??</div>
+            <div class="m-icon">&#128736;</div>
             <h3>GTM & Data Layer</h3>
             <p>Automated Data Layer pushes for seamless GTM integration.</p>
           </div>
@@ -364,18 +365,18 @@ import Base from "../layouts/Base.astro";
         <!-- 5. JSON-LD SEO -->
         <div class="modern-card">
           <div class="card-body">
-            <div class="m-icon">??</div>
+            <div class="m-icon">&#128269;</div>
             <h3>GP JSON-LD SEO</h3>
             <p>Get rich snippets in search results with automated schema.</p>
           </div>
           <!-- Visual Layer: Search Result -->
           <div class="visual-layer">
             <div class="mini-seo">
-              <div class="ms-url">gropulse.com â€º sneakers</div>
+              <div class="ms-url">gropulse.com › sneakers</div>
               <div class="ms-title">Premium Running Shoes - GroPulse</div>
               <div class="ms-rich">
-                <span class="ms-stars">?????</span>
-                <span class="ms-info">4.9 Â· $120.00 Â· In stock</span>
+                <span class="ms-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span class="ms-info">4.9 · $120.00 · In stock</span>
               </div>
             </div>
           </div>
@@ -384,7 +385,7 @@ import Base from "../layouts/Base.astro";
         <!-- 6. NoIndexly -->
         <div class="modern-card">
           <div class="card-body">
-            <div class="m-icon">??</div>
+            <div class="m-icon">&#128683;</div>
             <h3>NoIndexly Sitemap</h3>
             <p>Take control of your SEO indexing and hide unwanted pages.</p>
           </div>
@@ -410,7 +411,7 @@ import Base from "../layouts/Base.astro";
 
       <!-- CTA -->
       <div class="footer-cta">
-        <a href="#" class="btn-browse">Browse all Apps</a>
+        <a href="/apps/" class="btn-browse">Browse all Apps</a>
       </div>
     </div>
   </section>
@@ -423,7 +424,7 @@ import Base from "../layouts/Base.astro";
     <div class="container">
       <!-- Header -->
       <div class="section-intro">
-        <div class="label-badge">?? How It Works</div>
+        <div class="label-badge">&#128640; How It Works</div>
         <h2>Start growing in 3 <span>simple steps</span></h2>
         <p>Skip the complex setup. Get your store optimized in minutes.</p>
       </div>
@@ -517,7 +518,7 @@ import Base from "../layouts/Base.astro";
       <div class="why-wrapper">
         <!-- Left Side: Sticky Content -->
         <div class="why-left">
-          <div class="label-badge">?? Why Choose Us</div>
+          <div class="label-badge">&#128142; Why Choose Us</div>
           <h2>Built for merchants who demand <span>excellence</span></h2>
           <p>We don't just build apps; we build growth engines. Here is what sets GroPulse apart from the rest.</p>
 
@@ -533,7 +534,7 @@ import Base from "../layouts/Base.astro";
             </div>
           </div>
 
-          <a href="#" class="btn-primary">Explore Apps ?</a>
+          <a href="/apps/" class="btn-primary">Explore Apps &#8594;</a>
         </div>
 
         <!-- Right Side: Staggered Grid -->
@@ -558,7 +559,7 @@ import Base from "../layouts/Base.astro";
               </div>
               <h3>Zero Risk, High Trust</h3>
               <p>Our apps are tested rigorously to ensure they never break your store.</p>
-              <div class="f-tag">?? Security First</div>
+              <div class="f-tag">&#128737; Security First</div>
             </div>
 
             <!-- Feature 2 -->
@@ -579,7 +580,7 @@ import Base from "../layouts/Base.astro";
               </div>
               <h3>Human Support</h3>
               <p>No bots. Chat with real Shopify experts whenever you need help.</p>
-              <div class="f-tag">?? 24/7 Live Chat</div>
+              <div class="f-tag">&#128172; 24/7 Live Chat</div>
             </div>
           </div>
 
@@ -603,7 +604,7 @@ import Base from "../layouts/Base.astro";
               </div>
               <h3>No Speed Impact</h3>
               <p>Ultralight code ensuring your store maintains a 100/100 speed score.</p>
-              <div class="f-tag">? Optimized</div>
+              <div class="f-tag">&#9889; Optimized</div>
             </div>
 
             <!-- Feature 4 -->
@@ -626,7 +627,7 @@ import Base from "../layouts/Base.astro";
               </div>
               <h3>Drag & Drop Setup</h3>
               <p>Activate features instantly without touching a single line of code.</p>
-              <div class="f-tag">?? No-Code</div>
+              <div class="f-tag">&#129513; No-Code</div>
             </div>
           </div>
         </div>
@@ -642,7 +643,7 @@ import Base from "../layouts/Base.astro";
     <div class="container">
       <!-- Header -->
       <div class="section-intro">
-        <div class="label-badge">?? Wall of Love</div>
+        <div class="label-badge">&#128150; Wall of Love</div>
         <h2>Trusted by <span class="highlight">10,000+</span> Merchants</h2>
         <p>See why Shopify store owners love building with GroPulse.</p>
 
@@ -679,11 +680,11 @@ import Base from "../layouts/Base.astro";
               <div class="cc-user">
                 <div class="cc-avatar">J</div>
                 <div class="cc-meta">
-                  <span class="cc-name">Jason M. <span class="flag">????</span></span>
+                  <span class="cc-name">Jason M. <span class="flag">&#127482;&#127480;</span></span>
                   <span class="cc-store">Urban Gear</span>
                 </div>
               </div>
-              <div class="cc-stars">?????</div>
+              <div class="cc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
             <div class="cc-body">
               <p>
@@ -717,11 +718,11 @@ import Base from "../layouts/Base.astro";
               <div class="cc-user">
                 <div class="cc-avatar blue">S</div>
                 <div class="cc-meta">
-                  <span class="cc-name">Sarah J. <span class="flag">????</span></span>
+                  <span class="cc-name">Sarah J. <span class="flag">&#127468;&#127463;</span></span>
                   <span class="cc-store">GlowSkin</span>
                 </div>
               </div>
-              <div class="cc-stars">?????</div>
+              <div class="cc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
             <div class="cc-body">
               <p>
@@ -755,11 +756,11 @@ import Base from "../layouts/Base.astro";
               <div class="cc-user">
                 <div class="cc-avatar orange">L</div>
                 <div class="cc-meta">
-                  <span class="cc-name">Liam K. <span class="flag">????</span></span>
+                  <span class="cc-name">Liam K. <span class="flag">&#127464;&#127462;</span></span>
                   <span class="cc-store">Pixel Perfect</span>
                 </div>
               </div>
-              <div class="cc-stars">?????</div>
+              <div class="cc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
             <div class="cc-body">
               <p>
@@ -793,11 +794,11 @@ import Base from "../layouts/Base.astro";
               <div class="cc-user">
                 <div class="cc-avatar dark">M</div>
                 <div class="cc-meta">
-                  <span class="cc-name">Mike R. <span class="flag">????</span></span>
+                  <span class="cc-name">Mike R. <span class="flag">&#127462;&#127482;</span></span>
                   <span class="cc-store">TechHaven</span>
                 </div>
               </div>
-              <div class="cc-stars">?????</div>
+              <div class="cc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
             <div class="cc-body">
               <p>
@@ -832,11 +833,11 @@ import Base from "../layouts/Base.astro";
               <div class="cc-user">
                 <div class="cc-avatar">J</div>
                 <div class="cc-meta">
-                  <span class="cc-name">Jason M. <span class="flag">????</span></span>
+                  <span class="cc-name">Jason M. <span class="flag">&#127482;&#127480;</span></span>
                   <span class="cc-store">Urban Gear</span>
                 </div>
               </div>
-              <div class="cc-stars">?????</div>
+              <div class="cc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
             <div class="cc-body">
               <p>
@@ -868,11 +869,11 @@ import Base from "../layouts/Base.astro";
               <div class="cc-user">
                 <div class="cc-avatar blue">S</div>
                 <div class="cc-meta">
-                  <span class="cc-name">Sarah J. <span class="flag">????</span></span>
+                  <span class="cc-name">Sarah J. <span class="flag">&#127468;&#127463;</span></span>
                   <span class="cc-store">GlowSkin</span>
                 </div>
               </div>
-              <div class="cc-stars">?????</div>
+              <div class="cc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
             <div class="cc-body">
               <p>
@@ -904,11 +905,11 @@ import Base from "../layouts/Base.astro";
               <div class="cc-user">
                 <div class="cc-avatar orange">L</div>
                 <div class="cc-meta">
-                  <span class="cc-name">Liam K. <span class="flag">????</span></span>
+                  <span class="cc-name">Liam K. <span class="flag">&#127464;&#127462;</span></span>
                   <span class="cc-store">Pixel Perfect</span>
                 </div>
               </div>
-              <div class="cc-stars">?????</div>
+              <div class="cc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
             <div class="cc-body">
               <p>
@@ -940,11 +941,11 @@ import Base from "../layouts/Base.astro";
               <div class="cc-user">
                 <div class="cc-avatar dark">M</div>
                 <div class="cc-meta">
-                  <span class="cc-name">Mike R. <span class="flag">????</span></span>
+                  <span class="cc-name">Mike R. <span class="flag">&#127462;&#127482;</span></span>
                   <span class="cc-store">TechHaven</span>
                 </div>
               </div>
-              <div class="cc-stars">?????</div>
+              <div class="cc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
             <div class="cc-body">
               <p>
@@ -983,11 +984,11 @@ import Base from "../layouts/Base.astro";
               <div class="cc-user">
                 <div class="cc-avatar">E</div>
                 <div class="cc-meta">
-                  <span class="cc-name">Emma W. <span class="flag">????</span></span>
+                  <span class="cc-name">Emma W. <span class="flag">&#127465;&#127466;</span></span>
                   <span class="cc-store">ChicStyle</span>
                 </div>
               </div>
-              <div class="cc-stars">?????</div>
+              <div class="cc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
             <div class="cc-body">
               <p>
@@ -1019,11 +1020,11 @@ import Base from "../layouts/Base.astro";
               <div class="cc-user">
                 <div class="cc-avatar blue">D</div>
                 <div class="cc-meta">
-                  <span class="cc-name">David B. <span class="flag">????</span></span>
+                  <span class="cc-name">David B. <span class="flag">&#127467;&#127479;</span></span>
                   <span class="cc-store">FitLife</span>
                 </div>
               </div>
-              <div class="cc-stars">?????</div>
+              <div class="cc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
             <div class="cc-body">
               <p>
@@ -1055,11 +1056,11 @@ import Base from "../layouts/Base.astro";
               <div class="cc-user">
                 <div class="cc-avatar dark">R</div>
                 <div class="cc-meta">
-                  <span class="cc-name">Ryan T. <span class="flag">????</span></span>
+                  <span class="cc-name">Ryan T. <span class="flag">&#127482;&#127480;</span></span>
                   <span class="cc-store">GearUp</span>
                 </div>
               </div>
-              <div class="cc-stars">?????</div>
+              <div class="cc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
             <div class="cc-body">
               <p>
@@ -1091,11 +1092,11 @@ import Base from "../layouts/Base.astro";
               <div class="cc-user">
                 <div class="cc-avatar orange">A</div>
                 <div class="cc-meta">
-                  <span class="cc-name">Anna S. <span class="flag">????</span></span>
+                  <span class="cc-name">Anna S. <span class="flag">&#127470;&#127481;</span></span>
                   <span class="cc-store">PureHome</span>
                 </div>
               </div>
-              <div class="cc-stars">?????</div>
+              <div class="cc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
             <div class="cc-body">
               <p>
@@ -1130,11 +1131,11 @@ import Base from "../layouts/Base.astro";
               <div class="cc-user">
                 <div class="cc-avatar">E</div>
                 <div class="cc-meta">
-                  <span class="cc-name">Emma W. <span class="flag">????</span></span>
+                  <span class="cc-name">Emma W. <span class="flag">&#127465;&#127466;</span></span>
                   <span class="cc-store">ChicStyle</span>
                 </div>
               </div>
-              <div class="cc-stars">?????</div>
+              <div class="cc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
             <div class="cc-body">
               <p>
@@ -1166,11 +1167,11 @@ import Base from "../layouts/Base.astro";
               <div class="cc-user">
                 <div class="cc-avatar blue">D</div>
                 <div class="cc-meta">
-                  <span class="cc-name">David B. <span class="flag">????</span></span>
+                  <span class="cc-name">David B. <span class="flag">&#127467;&#127479;</span></span>
                   <span class="cc-store">FitLife</span>
                 </div>
               </div>
-              <div class="cc-stars">?????</div>
+              <div class="cc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
             <div class="cc-body">
               <p>
@@ -1202,11 +1203,11 @@ import Base from "../layouts/Base.astro";
               <div class="cc-user">
                 <div class="cc-avatar dark">R</div>
                 <div class="cc-meta">
-                  <span class="cc-name">Ryan T. <span class="flag">????</span></span>
+                  <span class="cc-name">Ryan T. <span class="flag">&#127482;&#127480;</span></span>
                   <span class="cc-store">GearUp</span>
                 </div>
               </div>
-              <div class="cc-stars">?????</div>
+              <div class="cc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
             <div class="cc-body">
               <p>
@@ -1238,11 +1239,11 @@ import Base from "../layouts/Base.astro";
               <div class="cc-user">
                 <div class="cc-avatar orange">A</div>
                 <div class="cc-meta">
-                  <span class="cc-name">Anna S. <span class="flag">????</span></span>
+                  <span class="cc-name">Anna S. <span class="flag">&#127470;&#127481;</span></span>
                   <span class="cc-store">PureHome</span>
                 </div>
               </div>
-              <div class="cc-stars">?????</div>
+              <div class="cc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
             <div class="cc-body">
               <p>
@@ -1295,16 +1296,16 @@ import Base from "../layouts/Base.astro";
           </p>
 
           <div class="cta-btn-group">
-            <a href="#" class="btn-solid">Explore All Apps</a>
-            <a href="#" class="btn-outline">Contact Support</a>
+            <a href="/apps/" class="btn-solid">Explore All Apps</a>
+            <a href="mailto:hello@gropulse.com" class="btn-outline">Contact Support</a>
           </div>
 
           <div class="cta-trust-row">
-            <div class="trust-item"><span class="icon-check">?</span> No credit card required</div>
-            <div class="divider">â€¢</div>
-            <div class="trust-item"><span class="icon-check">?</span> 7-day free trial</div>
-            <div class="divider">â€¢</div>
-            <div class="trust-item"><span class="icon-check">?</span> 24/7 Support</div>
+            <div class="trust-item"><span class="icon-check">&#10003;</span> No credit card required</div>
+            <div class="divider">•</div>
+            <div class="trust-item"><span class="icon-check">&#10003;</span> 7-day free trial</div>
+            <div class="divider">•</div>
+            <div class="trust-item"><span class="icon-check">&#10003;</span> 24/7 Support</div>
           </div>
         </div>
       </div>
@@ -1320,7 +1321,7 @@ import Base from "../layouts/Base.astro";
       <div class="footer-modules">
         <div class="f-card brand-card">
           <div class="bc-top">
-            <a href="#" class="f-logo">Gro<span>Pulse</span></a>
+            <a href="/" class="f-logo">Gro<span>Pulse</span></a>
             <p>Empowering 10,000+ merchants with high-performance tools.</p>
           </div>
 
@@ -1350,21 +1351,21 @@ import Base from "../layouts/Base.astro";
         <div class="f-card links-card">
           <span class="f-label">Apps</span>
           <ul class="f-list">
-            <li><a href="#">Analyzely GA4 <span class="hot-badge">Hot</span></a></li>
-            <li><a href="#">Pixee Tracking</a></li>
-            <li><a href="#">GroPulse Reviews</a></li>
-            <li><a href="#">GTM Data Layer</a></li>
-            <li><a href="#">NoIndexly SEO</a></li>
+            <li><a href="/apps/analyzely/">Analyzely GA4 <span class="hot-badge">Hot</span></a></li>
+            <li><a href="/apps/pixee/">Pixee Tracking</a></li>
+            <li><a href="/apps/google-reviews/">GroPulse Reviews</a></li>
+            <li><a href="/apps/gtm-data-layer/">GTM Data Layer</a></li>
+            <li><a href="/apps/noindexly/">NoIndexly SEO</a></li>
           </ul>
         </div>
 
         <div class="f-card links-card">
           <span class="f-label">Company</span>
           <ul class="f-list">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Partner Program</a></li>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">System Status <span class="status-dot"></span></a></li>
+            <li><a href="/">About Us</a></li>
+            <li><a href="https://apps.shopify.com/partners/gropulse" target="_blank" rel="noreferrer">Partner Program</a></li>
+            <li><a href="mailto:hello@gropulse.com">Help Center</a></li>
+            <li><a href="https://status.shopify.com/" target="_blank" rel="noreferrer">System Status <span class="status-dot"></span></a></li>
           </ul>
         </div>
 
@@ -1373,9 +1374,9 @@ import Base from "../layouts/Base.astro";
           <div class="contact-details">
             <a href="mailto:hello@gropulse.com" class="c-link">hello@gropulse.com</a>
             <div class="social-row">
-              <a href="#" class="sc-icon">X</a>
-              <a href="#" class="sc-icon">in</a>
-              <a href="#" class="sc-icon">fb</a>
+              <a href="https://x.com/gropulse" class="sc-icon" target="_blank" rel="noreferrer">X</a>
+              <a href="https://www.linkedin.com/company/gropulse" class="sc-icon" target="_blank" rel="noreferrer">in</a>
+              <a href="https://www.facebook.com/gropulse" class="sc-icon" target="_blank" rel="noreferrer">fb</a>
             </div>
           </div>
           <div class="shopify-tag">
@@ -1394,13 +1395,16 @@ import Base from "../layouts/Base.astro";
 
       <div class="footer-bar">
         <div class="legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="mailto:hello@gropulse.com">Privacy Policy</a>
+          <a href="mailto:hello@gropulse.com">Terms of Service</a>
         </div>
         <div class="copy">&copy; 2025 GroPulse Inc.</div>
       </div>
     </div>
   </footer>
 </Base>
+
+
+
 
 
