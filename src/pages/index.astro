@@ -1,0 +1,1406 @@
+﻿---
+import Base from "../layouts/Base.astro";
+---
+
+<Base>
+  <!-- 1. Header (Part of Hero file) -->
+  <header>
+  <nav class="nav-container">
+    <a href="#" class="logo">Gro<span>Pulse</span></a>
+    <div class="nav-right">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Apps</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+        <a href="#" class="btn-header">Log in</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <!-- 1. Hero Section -->
+  <section class="hero-section">
+    <!-- Trust Badge -->
+    <div class="trust-badge">
+      <span>? Trusted by 10,000+ Stores</span>
+    </div>
+
+    <div class="hero-content">
+      <h1>Simplify Your Shopify <span>Success</span> with GroPulse</h1>
+      <p>
+        We build high-performance apps that help you sell more, manage better,
+        and grow faster without touching a single line of code.
+      </p>
+
+      <div class="cta-box">
+        <a href="#" class="btn-main">Explore Our Apps</a>
+        <div class="review-text">
+          Excellent <span class="stars">?????</span> <strong>4.9/5</strong>
+          based on 769+ reviews
+        </div>
+      </div>
+    </div>
+
+    <!-- The "App Hub" Visual - Modernized -->
+    <div class="app-visual-grid">
+      <!-- App 1: Conversion Focus -->
+      <div class="app-card">
+        <div class="app-icon" style="color: #2563EB;">??</div>
+        <h3>Conversion Boost</h3>
+        <p>Maximize your sales with high-impact upsell and cross-sell tools.</p>
+        <div class="mini-stat-box">
+          <div class="stat-line">
+            <span class="stat-label">Added Revenue</span>
+            <span class="badge-green">+18%</span>
+          </div>
+          <div class="stat-line">
+            <span class="stat-label">Active Users</span>
+            <span class="stat-value">2.4k</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- App 2: Featured (Center) -->
+      <div
+        class="app-card card-center"
+        style="border-bottom: 4px solid var(--orange);"
+      >
+        <div class="app-icon" style="background: #fff3f1; color: var(--orange);">??</div>
+        <h3>Growth Hub</h3>
+        <p>A central dashboard to manage and automate all your store operations.</p>
+        <div class="mini-stat-box" style="background: #FFFFFF;">
+          <div class="stat-line">
+            <span class="stat-label">Sync Status</span>
+            <span class="stat-value" style="color: #10B981;">? Live</span>
+          </div>
+          <div class="stat-line">
+            <span class="stat-label">Performance</span>
+            <span class="stat-value">Excellent</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- App 3: Customization/SEO -->
+      <div class="app-card">
+        <div class="app-icon" style="color: #10B981;">?</div>
+        <h3>Speed & SEO</h3>
+        <p>Optimize your store speed and search ranking for better visibility.</p>
+        <div class="mini-stat-box">
+          <div class="stat-line">
+            <span class="stat-label">Load Time</span>
+            <span class="stat-value">1.2s</span>
+          </div>
+          <div class="stat-line">
+            <span class="stat-label">SEO Score</span>
+            <span class="stat-value" style="color: #10B981;">98/100</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPACER 140px -->
+  <div style="height: 80px; width: 100%; background: transparent;"></div>
+
+  <!-- 2. Solution Section -->
+  <section class="solutions-section">
+    <div class="container">
+      <!-- Label & Heading -->
+      <div class="header-content">
+        <div class="trust-badge">
+          <span>? Our Solutions</span>
+        </div>
+        <h2>
+          Built to solve your daily<br />
+          Shopify <span>challenges</span>
+        </h2>
+        <p>
+          We build tools that solve real merchant problems—saving you time to<br />
+          focus on growing your brand.
+        </p>
+      </div>
+
+      <!-- Solutions Grid -->
+      <div class="expert-grid">
+        <!-- Category 1 -->
+        <div class="expert-card">
+          <div class="card-top">
+            <div class="card-icon icon-orange">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="card-info">
+              <h3>Conversion Optimization</h3>
+              <p>
+                Turn every visitor into a customer with tools designed to reduce
+                friction and increase cart value.
+              </p>
+            </div>
+          </div>
+          <!-- Visual Element -->
+          <div class="card-visual">
+            <div class="visual-pill">AOV Boost: +15%</div>
+            <div class="visual-line"></div>
+            <div class="visual-line short"></div>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="expert-card featured-card">
+          <div class="card-top">
+            <div class="card-icon icon-black">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <div class="card-info">
+              <h3>Operations & Automation</h3>
+              <p>
+                Say goodbye to manual errors. Automate your store management so
+                you can grow while you sleep.
+              </p>
+            </div>
+          </div>
+          <!-- Visual Element -->
+          <div class="card-visual visual-dark">
+            <div class="visual-pill pill-orange">99.9% Automated</div>
+            <div class="visual-line bg-white"></div>
+            <div class="visual-line short bg-white"></div>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="expert-card">
+          <div class="card-top">
+            <div class="card-icon icon-blue">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="card-info">
+              <h3>Performance & Trust</h3>
+              <p>
+                Increase your store speed and build instant credibility with
+                search engine optimized solutions.
+              </p>
+            </div>
+          </div>
+          <!-- Visual Element -->
+          <div class="card-visual">
+            <div class="visual-pill pill-blue">Speed Score: 98</div>
+            <div class="visual-line"></div>
+            <div class="visual-line short"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPACER 140px -->
+  <div style="height: 0px; width: 100%; background: transparent;"></div>
+  <!-- 3. Featured Apps Section -->
+  <section class="premium-apps-section">
+    <div class="container">
+      <!-- Header -->
+      <div class="section-intro">
+        <div class="label-badge">? Featured Apps</div>
+        <h2>The core of your store's <span>growth</span></h2>
+        <p>High-performance tools to automate, track, and scale your business.</p>
+      </div>
+
+      <!-- Grid -->
+      <div class="premium-grid">
+        <!-- 1. Analyzely -->
+        <div class="modern-card">
+          <div class="card-body">
+            <div class="m-icon">??</div>
+            <h3>Analyzely - GA4</h3>
+            <p>Precise Google Analytics 4 tracking with server-side accuracy.</p>
+          </div>
+          <!-- Visual Layer: Mini Dashboard -->
+          <div class="visual-layer">
+            <div class="mini-dash">
+              <div class="md-header">
+                <span class="md-label">Real-time Overview</span>
+                <span class="md-live">? Live</span>
+              </div>
+              <div class="md-grid">
+                <div class="md-box">
+                  <span class="lbl">Revenue</span>
+                  <span class="val">$12.4k</span>
+                </div>
+                <div class="md-box">
+                  <span class="lbl">Active Users</span>
+                  <span class="val">842</span>
+                </div>
+              </div>
+              <div class="md-bar-wrap">
+                <div class="md-bar-fill"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Pixee -->
+        <div class="modern-card">
+          <div class="card-body">
+            <div class="m-icon">??</div>
+            <h3>Pixee – FB Pixels</h3>
+            <p>Multi-pixel management to supercharge your ad campaigns.</p>
+          </div>
+          <!-- Visual Layer: Pixel Table -->
+          <div class="visual-layer">
+            <div class="mini-table">
+              <div class="mt-row head">
+                <span>Pixel Name</span>
+                <span>Status</span>
+              </div>
+              <div class="mt-row">
+                <span class="mt-name">Master Pixel</span>
+                <span class="mt-badge active">Active</span>
+              </div>
+              <div class="mt-row">
+                <span class="mt-name">Backup Pixel</span>
+                <span class="mt-badge active">Active</span>
+              </div>
+              <div class="mt-row">
+                <span class="mt-name">Niche Pixel</span>
+                <span class="mt-badge inactive">Paused</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Google Reviews -->
+        <div class="modern-card">
+          <div class="card-body">
+            <div class="m-icon">?</div>
+            <h3>Google Reviews</h3>
+            <p>Showcase real trust with Google Reviews on your store.</p>
+          </div>
+          <!-- Visual Layer: Review Card -->
+          <div class="visual-layer">
+            <div class="mini-review">
+              <div class="mr-top">
+                <div class="g-brand"><span class="g-icon">G</span> 4.9 Rating</div>
+                <div class="mr-stars">?????</div>
+              </div>
+              <p class="mr-text">"Amazing product quality! Fast shipping..."</p>
+              <div class="mr-user">
+                <div class="mr-avatar"></div>
+                <div class="mr-meta">
+                  <strong>Sarah J.</strong>
+                  <span>Verified Buyer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. GTM & Data Layer -->
+        <div class="modern-card">
+          <div class="card-body">
+            <div class="m-icon">??</div>
+            <h3>GTM & Data Layer</h3>
+            <p>Automated Data Layer pushes for seamless GTM integration.</p>
+          </div>
+          <!-- Visual Layer: Dark Terminal -->
+          <div class="visual-layer">
+            <div class="mini-terminal">
+              <div class="term-head">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="term-name">dataLayer</span>
+              </div>
+              <div class="term-code">
+                <div class="ln"><span class="k">event:</span> <span class="s">'purchase'</span>,</div>
+                <div class="ln"><span class="k">value:</span> <span class="n">149.00</span>,</div>
+                <div class="ln"><span class="k">currency:</span> <span class="s">'USD'</span>,</div>
+                <div class="ln"><span class="k">items:</span> <span class="b">[ &#123; id:... &#125; ]</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. JSON-LD SEO -->
+        <div class="modern-card">
+          <div class="card-body">
+            <div class="m-icon">??</div>
+            <h3>GP JSON-LD SEO</h3>
+            <p>Get rich snippets in search results with automated schema.</p>
+          </div>
+          <!-- Visual Layer: Search Result -->
+          <div class="visual-layer">
+            <div class="mini-seo">
+              <div class="ms-url">gropulse.com › sneakers</div>
+              <div class="ms-title">Premium Running Shoes - GroPulse</div>
+              <div class="ms-rich">
+                <span class="ms-stars">?????</span>
+                <span class="ms-info">4.9 · $120.00 · In stock</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. NoIndexly -->
+        <div class="modern-card">
+          <div class="card-body">
+            <div class="m-icon">??</div>
+            <h3>NoIndexly Sitemap</h3>
+            <p>Take control of your SEO indexing and hide unwanted pages.</p>
+          </div>
+          <!-- Visual Layer: Toggle Controls -->
+          <div class="visual-layer">
+            <div class="mini-control">
+              <div class="mc-row">
+                <span class="mc-path">/cart</span>
+                <div class="toggle off"></div>
+              </div>
+              <div class="mc-row">
+                <span class="mc-path">/products/all</span>
+                <div class="toggle on"></div>
+              </div>
+              <div class="mc-row">
+                <span class="mc-path">/search</span>
+                <div class="toggle off"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="footer-cta">
+        <a href="#" class="btn-browse">Browse all Apps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPACER 140px -->
+  <div style="height: 0px; width: 100%; background: transparent;"></div>
+
+  <!-- 4. Step Section -->
+  <section class="timeline-section">
+    <div class="container">
+      <!-- Header -->
+      <div class="section-intro">
+        <div class="label-badge">?? How It Works</div>
+        <h2>Start growing in 3 <span>simple steps</span></h2>
+        <p>Skip the complex setup. Get your store optimized in minutes.</p>
+      </div>
+
+      <!-- Timeline Container -->
+      <div class="timeline-wrapper">
+        <!-- The Connector Line (Constrained between icons) -->
+        <div class="timeline-track"></div>
+
+        <!-- Step 1 -->
+        <div class="timeline-step">
+          <div class="icon-circle">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </div>
+          <div class="step-content">
+            <span class="step-badge">01. Install</span>
+            <h3>One-Click Install</h3>
+            <p>Visit the Shopify App Store and click "Add App". No coding or developers needed.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-step">
+          <div class="icon-circle active-pulse">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+          </div>
+          <div class="step-content">
+            <span class="step-badge">02. Configure</span>
+            <h3>Easy Configure</h3>
+            <p>Toggle on the features you need from our intuitive dashboard. It takes seconds.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-step">
+          <div class="icon-circle">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <div class="step-content">
+            <span class="step-badge">03. Growth</span>
+            <h3>Grow & Scale</h3>
+            <p>Sit back and watch your sales, traffic, and store performance improve automatically.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPACER 140px -->
+  <div style="height: 0px; width: 100%; background: transparent;"></div>
+  <!-- 5. Why Choose Us Section -->
+  <section class="why-gropulse-section">
+    <div class="container">
+      <div class="why-wrapper">
+        <!-- Left Side: Sticky Content -->
+        <div class="why-left">
+          <div class="label-badge">?? Why Choose Us</div>
+          <h2>Built for merchants who demand <span>excellence</span></h2>
+          <p>We don't just build apps; we build growth engines. Here is what sets GroPulse apart from the rest.</p>
+
+          <div class="stat-row">
+            <div class="stat-item">
+              <span class="s-num">10k+</span>
+              <span class="s-lbl">Active Installs</span>
+            </div>
+            <div class="vr-line"></div>
+            <div class="stat-item">
+              <span class="s-num">4.9</span>
+              <span class="s-lbl">Avg Rating</span>
+            </div>
+          </div>
+
+          <a href="#" class="btn-primary">Explore Apps ?</a>
+        </div>
+
+        <!-- Right Side: Staggered Grid -->
+        <div class="why-right">
+          <!-- Column 1 -->
+          <div class="grid-col col-1">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+              <div class="f-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3>Zero Risk, High Trust</h3>
+              <p>Our apps are tested rigorously to ensure they never break your store.</p>
+              <div class="f-tag">?? Security First</div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card">
+              <div class="f-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-11.7 8.38 8.38 0 0 1 3.8.9L21 3z"></path>
+                </svg>
+              </div>
+              <h3>Human Support</h3>
+              <p>No bots. Chat with real Shopify experts whenever you need help.</p>
+              <div class="f-tag">?? 24/7 Live Chat</div>
+            </div>
+          </div>
+
+          <!-- Column 2 (Offset/Staggered) -->
+          <div class="grid-col col-2">
+            <!-- Feature 3 -->
+            <div class="feature-card">
+              <div class="f-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <h3>No Speed Impact</h3>
+              <p>Ultralight code ensuring your store maintains a 100/100 speed score.</p>
+              <div class="f-tag">? Optimized</div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card">
+              <div class="f-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+              </div>
+              <h3>Drag & Drop Setup</h3>
+              <p>Activate features instantly without touching a single line of code.</p>
+              <div class="f-tag">?? No-Code</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPACER 140px -->
+  <div style="height: 0px; width: 100%; background: transparent;"></div>
+
+  <!-- 6. Testimonial Section -->
+  <section class="love-wall-clean">
+    <div class="container">
+      <!-- Header -->
+      <div class="section-intro">
+        <div class="label-badge">?? Wall of Love</div>
+        <h2>Trusted by <span class="highlight">10,000+</span> Merchants</h2>
+        <p>See why Shopify store owners love building with GroPulse.</p>
+
+        <!-- Rating Badge -->
+        <div class="rating-box">
+          <div class="shopify-icon">
+            <svg viewBox="0 0 40 40" width="22" height="22">
+              <path
+                fill="#95BF47"
+                d="M35.6 15.1l-2.6-11.4c-.2-.7-1-1-1.6-.6l-6.4 3.9-3.9-8c-.3-.6-1.1-.6-1.4 0l-3.9 8-6.4-3.9c-.6-.4-1.4 0-1.6.6L5.2 15.1c-.2.9.2 1.9 1 2.2l13.8 5.6c.3.1.7.1 1 0l13.8-5.6c.7-.4 1.1-1.3.8-2.2z"
+              ></path>
+            </svg>
+          </div>
+          <div class="rating-text">
+            <span class="score">4.9/5.0</span>
+            <span class="sub">Average Rating on Shopify App Store</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marquee Wrapper -->
+    <div class="marquee-wrapper">
+      <div class="fade-overlay left"></div>
+      <div class="fade-overlay right"></div>
+
+      <!-- ROW 1: Scrolling Left -->
+      <div class="marquee-track scroll-left">
+        <!-- Group 1 -->
+        <div class="marquee-group">
+          <!-- Review 1 -->
+          <div class="clean-card">
+            <div class="cc-header">
+              <div class="cc-user">
+                <div class="cc-avatar">J</div>
+                <div class="cc-meta">
+                  <span class="cc-name">Jason M. <span class="flag">????</span></span>
+                  <span class="cc-store">Urban Gear</span>
+                </div>
+              </div>
+              <div class="cc-stars">?????</div>
+            </div>
+            <div class="cc-body">
+              <p>
+                "Analyzely is by far the most accurate GA4 app. The setup was
+                instant, and the support team helped me verify data in minutes."
+              </p>
+            </div>
+            <div class="cc-footer">
+              <span class="verified-badge">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+              <span class="time">Posted 2 days ago</span>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="clean-card">
+            <div class="cc-header">
+              <div class="cc-user">
+                <div class="cc-avatar blue">S</div>
+                <div class="cc-meta">
+                  <span class="cc-name">Sarah J. <span class="flag">????</span></span>
+                  <span class="cc-store">GlowSkin</span>
+                </div>
+              </div>
+              <div class="cc-stars">?????</div>
+            </div>
+            <div class="cc-body">
+              <p>
+                "GroPulse apps are a game changer. We use 'NoIndexly' for SEO.
+                Organic traffic increased by 40% in just two months."
+              </p>
+            </div>
+            <div class="cc-footer">
+              <span class="verified-badge">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+              <span class="time">Posted 1 week ago</span>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="clean-card">
+            <div class="cc-header">
+              <div class="cc-user">
+                <div class="cc-avatar orange">L</div>
+                <div class="cc-meta">
+                  <span class="cc-name">Liam K. <span class="flag">????</span></span>
+                  <span class="cc-store">Pixel Perfect</span>
+                </div>
+              </div>
+              <div class="cc-stars">?????</div>
+            </div>
+            <div class="cc-body">
+              <p>
+                "Finally a pixel app that tracks correctly. My ROAS has improved
+                significantly since switching to Pixee. Worth every penny."
+              </p>
+            </div>
+            <div class="cc-footer">
+              <span class="verified-badge">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+              <span class="time">Posted 3 days ago</span>
+            </div>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="clean-card">
+            <div class="cc-header">
+              <div class="cc-user">
+                <div class="cc-avatar dark">M</div>
+                <div class="cc-meta">
+                  <span class="cc-name">Mike R. <span class="flag">????</span></span>
+                  <span class="cc-store">TechHaven</span>
+                </div>
+              </div>
+              <div class="cc-stars">?????</div>
+            </div>
+            <div class="cc-body">
+              <p>
+                "The support team fixed my theme conflict in minutes via live
+                chat. The apps are simple, no-code, and work perfectly."
+              </p>
+            </div>
+            <div class="cc-footer">
+              <span class="verified-badge">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+              <span class="time">Posted 5 days ago</span>
+            </div>
+          </div>
+        </div>
+        <!-- Group 1 Clone (For Infinite Loop) -->
+        <div class="marquee-group">
+          <div class="clean-card">
+            <div class="cc-header">
+              <div class="cc-user">
+                <div class="cc-avatar">J</div>
+                <div class="cc-meta">
+                  <span class="cc-name">Jason M. <span class="flag">????</span></span>
+                  <span class="cc-store">Urban Gear</span>
+                </div>
+              </div>
+              <div class="cc-stars">?????</div>
+            </div>
+            <div class="cc-body">
+              <p>
+                "Analyzely is by far the most accurate GA4 app. The setup was
+                instant, and the support team helped me verify data in minutes."
+              </p>
+            </div>
+            <div class="cc-footer">
+              <span class="verified-badge">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+              <span class="time">Posted 2 days ago</span>
+            </div>
+          </div>
+          <div class="clean-card">
+            <div class="cc-header">
+              <div class="cc-user">
+                <div class="cc-avatar blue">S</div>
+                <div class="cc-meta">
+                  <span class="cc-name">Sarah J. <span class="flag">????</span></span>
+                  <span class="cc-store">GlowSkin</span>
+                </div>
+              </div>
+              <div class="cc-stars">?????</div>
+            </div>
+            <div class="cc-body">
+              <p>
+                "GroPulse apps are a game changer. We use 'NoIndexly' for SEO.
+                Organic traffic increased by 40% in just two months."
+              </p>
+            </div>
+            <div class="cc-footer">
+              <span class="verified-badge">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+              <span class="time">Posted 1 week ago</span>
+            </div>
+          </div>
+          <div class="clean-card">
+            <div class="cc-header">
+              <div class="cc-user">
+                <div class="cc-avatar orange">L</div>
+                <div class="cc-meta">
+                  <span class="cc-name">Liam K. <span class="flag">????</span></span>
+                  <span class="cc-store">Pixel Perfect</span>
+                </div>
+              </div>
+              <div class="cc-stars">?????</div>
+            </div>
+            <div class="cc-body">
+              <p>
+                "Finally a pixel app that tracks correctly. My ROAS has improved
+                significantly since switching to Pixee. Worth every penny."
+              </p>
+            </div>
+            <div class="cc-footer">
+              <span class="verified-badge">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+              <span class="time">Posted 3 days ago</span>
+            </div>
+          </div>
+          <div class="clean-card">
+            <div class="cc-header">
+              <div class="cc-user">
+                <div class="cc-avatar dark">M</div>
+                <div class="cc-meta">
+                  <span class="cc-name">Mike R. <span class="flag">????</span></span>
+                  <span class="cc-store">TechHaven</span>
+                </div>
+              </div>
+              <div class="cc-stars">?????</div>
+            </div>
+            <div class="cc-body">
+              <p>
+                "The support team fixed my theme conflict in minutes via live
+                chat. The apps are simple, no-code, and work perfectly."
+              </p>
+            </div>
+            <div class="cc-footer">
+              <span class="verified-badge">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+              <span class="time">Posted 5 days ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROW 2: Scrolling Right -->
+      <div class="marquee-track scroll-right">
+        <!-- Group 2 -->
+        <div class="marquee-group">
+          <div class="clean-card">
+            <div class="cc-header">
+              <div class="cc-user">
+                <div class="cc-avatar">E</div>
+                <div class="cc-meta">
+                  <span class="cc-name">Emma W. <span class="flag">????</span></span>
+                  <span class="cc-store">ChicStyle</span>
+                </div>
+              </div>
+              <div class="cc-stars">?????</div>
+            </div>
+            <div class="cc-body">
+              <p>
+                "Love the clean interface. It feels like a native Shopify
+                feature. Simplicity at its best. Highly recommended for beginners."
+              </p>
+            </div>
+            <div class="cc-footer">
+              <span class="verified-badge">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+              <span class="time">Posted yesterday</span>
+            </div>
+          </div>
+          <div class="clean-card">
+            <div class="cc-header">
+              <div class="cc-user">
+                <div class="cc-avatar blue">D</div>
+                <div class="cc-meta">
+                  <span class="cc-name">David B. <span class="flag">????</span></span>
+                  <span class="cc-store">FitLife</span>
+                </div>
+              </div>
+              <div class="cc-stars">?????</div>
+            </div>
+            <div class="cc-body">
+              <p>
+                "GroPulse GTM app saved me hours of coding. The data layer pushes
+                are perfect. I set up Google Ads tracking myself."
+              </p>
+            </div>
+            <div class="cc-footer">
+              <span class="verified-badge">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+              <span class="time">Posted 2 weeks ago</span>
+            </div>
+          </div>
+          <div class="clean-card">
+            <div class="cc-header">
+              <div class="cc-user">
+                <div class="cc-avatar dark">R</div>
+                <div class="cc-meta">
+                  <span class="cc-name">Ryan T. <span class="flag">????</span></span>
+                  <span class="cc-store">GearUp</span>
+                </div>
+              </div>
+              <div class="cc-stars">?????</div>
+            </div>
+            <div class="cc-body">
+              <p>
+                "NoIndexly is a lifesaver for managing SEO pages. I can finally
+                hide duplicate collection pages from Google search results."
+              </p>
+            </div>
+            <div class="cc-footer">
+              <span class="verified-badge">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+              <span class="time">Posted 3 days ago</span>
+            </div>
+          </div>
+          <div class="clean-card">
+            <div class="cc-header">
+              <div class="cc-user">
+                <div class="cc-avatar orange">A</div>
+                <div class="cc-meta">
+                  <span class="cc-name">Anna S. <span class="flag">????</span></span>
+                  <span class="cc-store">PureHome</span>
+                </div>
+              </div>
+              <div class="cc-stars">?????</div>
+            </div>
+            <div class="cc-body">
+              <p>
+                "Great apps, great pricing, and even better support. I had an
+                issue with billing and they resolved it instantly. 10/10."
+              </p>
+            </div>
+            <div class="cc-footer">
+              <span class="verified-badge">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+              <span class="time">Posted 4 days ago</span>
+            </div>
+          </div>
+        </div>
+        <!-- Group 2 Clone (For Infinite Loop) -->
+        <div class="marquee-group">
+          <div class="clean-card">
+            <div class="cc-header">
+              <div class="cc-user">
+                <div class="cc-avatar">E</div>
+                <div class="cc-meta">
+                  <span class="cc-name">Emma W. <span class="flag">????</span></span>
+                  <span class="cc-store">ChicStyle</span>
+                </div>
+              </div>
+              <div class="cc-stars">?????</div>
+            </div>
+            <div class="cc-body">
+              <p>
+                "Love the clean interface. It feels like a native Shopify
+                feature. Simplicity at its best. Highly recommended for beginners."
+              </p>
+            </div>
+            <div class="cc-footer">
+              <span class="verified-badge">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+              <span class="time">Posted yesterday</span>
+            </div>
+          </div>
+          <div class="clean-card">
+            <div class="cc-header">
+              <div class="cc-user">
+                <div class="cc-avatar blue">D</div>
+                <div class="cc-meta">
+                  <span class="cc-name">David B. <span class="flag">????</span></span>
+                  <span class="cc-store">FitLife</span>
+                </div>
+              </div>
+              <div class="cc-stars">?????</div>
+            </div>
+            <div class="cc-body">
+              <p>
+                "GroPulse GTM app saved me hours of coding. The data layer pushes
+                are perfect. I set up Google Ads tracking myself."
+              </p>
+            </div>
+            <div class="cc-footer">
+              <span class="verified-badge">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+              <span class="time">Posted 2 weeks ago</span>
+            </div>
+          </div>
+          <div class="clean-card">
+            <div class="cc-header">
+              <div class="cc-user">
+                <div class="cc-avatar dark">R</div>
+                <div class="cc-meta">
+                  <span class="cc-name">Ryan T. <span class="flag">????</span></span>
+                  <span class="cc-store">GearUp</span>
+                </div>
+              </div>
+              <div class="cc-stars">?????</div>
+            </div>
+            <div class="cc-body">
+              <p>
+                "NoIndexly is a lifesaver for managing SEO pages. I can finally
+                hide duplicate collection pages from Google search results."
+              </p>
+            </div>
+            <div class="cc-footer">
+              <span class="verified-badge">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+              <span class="time">Posted 3 days ago</span>
+            </div>
+          </div>
+          <div class="clean-card">
+            <div class="cc-header">
+              <div class="cc-user">
+                <div class="cc-avatar orange">A</div>
+                <div class="cc-meta">
+                  <span class="cc-name">Anna S. <span class="flag">????</span></span>
+                  <span class="cc-store">PureHome</span>
+                </div>
+              </div>
+              <div class="cc-stars">?????</div>
+            </div>
+            <div class="cc-body">
+              <p>
+                "Great apps, great pricing, and even better support. I had an
+                issue with billing and they resolved it instantly. 10/10."
+              </p>
+            </div>
+            <div class="cc-footer">
+              <span class="verified-badge">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified
+              </span>
+              <span class="time">Posted 4 days ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPACER 140px -->
+  <div style="height: 0px; width: 100%; background: transparent;"></div>
+  <!-- 7. CTA Section -->
+  <section class="cta-final-section">
+    <div class="container">
+      <div class="cta-card-final">
+        <div class="glow-shape shape-left"></div>
+        <div class="glow-shape shape-right"></div>
+
+        <div class="cta-inner">
+          <h2 class="cta-title">
+            Ready to Scale Your Shopify<br />
+            Store with <span>GroPulse?</span>
+          </h2>
+
+          <p class="cta-desc">
+            Join 10,000+ merchants saving time and increasing revenue.<br />
+            Install today and see the difference.
+          </p>
+
+          <div class="cta-btn-group">
+            <a href="#" class="btn-solid">Explore All Apps</a>
+            <a href="#" class="btn-outline">Contact Support</a>
+          </div>
+
+          <div class="cta-trust-row">
+            <div class="trust-item"><span class="icon-check">?</span> No credit card required</div>
+            <div class="divider">•</div>
+            <div class="trust-item"><span class="icon-check">?</span> 7-day free trial</div>
+            <div class="divider">•</div>
+            <div class="trust-item"><span class="icon-check">?</span> 24/7 Support</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPACER 140px -->
+  <div style="height: 0px; width: 100%; background: transparent;"></div>
+
+  <!-- 8. Footer Section -->
+  <footer class="bento-footer">
+    <div class="container">
+      <div class="footer-modules">
+        <div class="f-card brand-card">
+          <div class="bc-top">
+            <a href="#" class="f-logo">Gro<span>Pulse</span></a>
+            <p>Empowering 10,000+ merchants with high-performance tools.</p>
+          </div>
+
+          <div class="newsletter-box">
+            <label>Join the growth list</label>
+            <form class="clean-form">
+              <input type="email" placeholder="email@address.com" />
+              <button type="submit">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="f-card links-card">
+          <span class="f-label">Apps</span>
+          <ul class="f-list">
+            <li><a href="#">Analyzely GA4 <span class="hot-badge">Hot</span></a></li>
+            <li><a href="#">Pixee Tracking</a></li>
+            <li><a href="#">GroPulse Reviews</a></li>
+            <li><a href="#">GTM Data Layer</a></li>
+            <li><a href="#">NoIndexly SEO</a></li>
+          </ul>
+        </div>
+
+        <div class="f-card links-card">
+          <span class="f-label">Company</span>
+          <ul class="f-list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Partner Program</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">System Status <span class="status-dot"></span></a></li>
+          </ul>
+        </div>
+
+        <div class="f-card contact-card">
+          <span class="f-label">Connect</span>
+          <div class="contact-details">
+            <a href="mailto:hello@gropulse.com" class="c-link">hello@gropulse.com</a>
+            <div class="social-row">
+              <a href="#" class="sc-icon">X</a>
+              <a href="#" class="sc-icon">in</a>
+              <a href="#" class="sc-icon">fb</a>
+            </div>
+          </div>
+          <div class="shopify-tag">
+            <svg viewBox="0 0 40 40" width="16" height="16">
+              <path
+                fill="#95BF47"
+                d="M35.6 15.1l-2.6-11.4c-.2-.7-1-1-1.6-.6l-6.4 3.9-3.9-8c-.3-.6-1.1-.6-1.4 0l-3.9 8-6.4-3.9c-.6-.4-1.4 0-1.6.6L5.2 15.1c-.2.9.2 1.9 1 2.2l13.8 5.6c.3.1.7.1 1 0l13.8-5.6c.7-.4 1.1-1.3.8-2.2z"
+              ></path>
+            </svg>
+            Partner
+          </div>
+        </div>
+      </div>
+
+      <div class="brand-signature">GROPULSE</div>
+
+      <div class="footer-bar">
+        <div class="legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div class="copy">&copy; 2025 GroPulse Inc.</div>
+      </div>
+    </div>
+  </footer>
+</Base>
+
+
