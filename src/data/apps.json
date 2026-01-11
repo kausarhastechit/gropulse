@@ -1,0 +1,981 @@
+{
+  "analyzely": {
+    "name": "Analyzely - Google Analytics 4",
+    "description": "Boost your e-commerce performance with Analyzely. Easily connect GA4 to your store & track conversions for effective marketing strategies.",
+    "features": [
+      "GA4 Measurement ID Integration",
+      "Standard Analytics Report",
+      "Report Download Option",
+      "Filter by Date Range",
+      "AI Analysis (10 Credits)",
+      "Easy GA4 Setup Guide",
+      "All Free Plan Features Included",
+      "eCommerce report",
+      "Realtime report",
+      "Client & Server Side Event Tracking",
+      "GDPR Compliant Tracking",
+      "AI Analysis (30 Credits)",
+      "Priority support"
+    ],
+    "ratingValue": 4.7,
+    "ratingCount": 108,
+    "screenshots": [
+      "https://cdn.shopify.com/app-store/listing_images/393b3b4bb69acc2f58835a02f4aaa14b/desktop_screenshot/CIfQosn374ADEAE=.jpeg?height=360&quality=90&width=640",
+      "https://cdn.shopify.com/app-store/listing_images/393b3b4bb69acc2f58835a02f4aaa14b/desktop_screenshot/CK6orcn374ADEAE=.jpeg?height=360&quality=90&width=640",
+      "https://cdn.shopify.com/app-store/listing_images/393b3b4bb69acc2f58835a02f4aaa14b/desktop_screenshot/CPTatsn374ADEAE=.jpeg?height=360&quality=90&width=640",
+      "https://cdn.shopify.com/app-store/listing_images/393b3b4bb69acc2f58835a02f4aaa14b/desktop_screenshot/CIfQosn374ADEAE=.jpeg?height=720&quality=90&width=1280"
+    ],
+    "iconUrl": "https://cdn.shopify.com/app-store/listing_images/393b3b4bb69acc2f58835a02f4aaa14b/icon/CMu5kdbU3vkCEAE=.png",
+    "pricing": [
+      {
+        "name": "Free Plan",
+        "price": "Free to install",
+        "note": "10 AI credits included monthly. Additional credits cost $1 each.",
+        "trial": null
+      },
+      {
+        "name": "Pro Monthly Plan",
+        "price": "",
+        "note": "30 AI credits included monthly. Additional credits cost $1 each.",
+        "trial": "Free trial available"
+      }
+    ],
+    "accent": "#2563EB",
+    "highlights": [
+      "Use directly in Shopify admin",
+      "Works with the latest themes"
+    ],
+    "pricingPlans": [
+      {
+        "name": "Free Plan",
+        "price": "Free to install",
+        "period": "",
+        "yearly": "",
+        "note": "10 AI credits included monthly. Additional credits cost $1 each.",
+        "trial": "",
+        "features": [
+          "GA4 Measurement ID Integration",
+          "Standard Analytics Report",
+          "Report Download Option",
+          "Filter by Date Range",
+          "AI Analysis (10 Credits)",
+          "Easy GA4 Setup Guide"
+        ]
+      },
+      {
+        "name": "Pro Monthly Plan",
+        "price": "$21",
+        "period": "/ month",
+        "yearly": "or $95.88/year and save 62%",
+        "note": "30 AI credits included monthly. Additional credits cost $1 each.",
+        "trial": "7-day free trial",
+        "features": [
+          "All Free Plan Features Included",
+          "eCommerce report",
+          "Realtime report",
+          "Client & Server Side Event Tracking",
+          "GDPR Compliant Tracking",
+          "AI Analysis (30 Credits)",
+          "Priority support"
+        ]
+      }
+    ]
+  },
+  "json-ld-seo": {
+    "name": "GP JSON-LD Schema & AI SEO",
+    "description": "Add rich snippets to Google search results automatically. AI-powered alt text, meta tags & schema markup. Show star ratings, prices & FAQs. No coding needed.",
+    "features": [
+      "Local Business Schema",
+      "Product & breadcrumb schema",
+      "Article & blog page schema",
+      "Video & recipe schema",
+      "Organization schema",
+      "10 AI credits/month",
+      "10 AI image optimizations/month",
+      "10 AI meta tag actions/month",
+      "All Free plan features",
+      "Product schema with star ratings",
+      "Sitelinks search box schema",
+      "FAQ schema for any page",
+      "Collection carousel schema",
+      "50 AI credits/month",
+      "50 image optimizations/month",
+      "50 meta tag actions/month",
+      "All Pro plan features",
+      "AI content optimization tools",
+      "Google Search Console analytics",
+      "300 AI credits/month",
+      "Unlimited image optimizations",
+      "Unlimited meta tag actions",
+      "Priority queue & task tracking",
+      "Priority support"
+    ],
+    "ratingValue": 4.9,
+    "ratingCount": 45,
+    "screenshots": [
+      "https://cdn.shopify.com/app-store/listing_images/a8c10b6d1426959eb3ce9c951073e8e0/desktop_screenshot/CLyo8MPysIoDEAE=.jpeg?height=360&quality=90&width=640",
+      "https://cdn.shopify.com/app-store/listing_images/a8c10b6d1426959eb3ce9c951073e8e0/desktop_screenshot/CLyo8MPysIoDEAE=.jpeg?height=720&quality=90&width=1280",
+      "https://cdn.shopify.com/app-store/listing_images/a8c10b6d1426959eb3ce9c951073e8e0/desktop_screenshot/COucwszj1v8CEAE=.jpeg?height=720&quality=90&width=1280",
+      "https://cdn.shopify.com/app-store/listing_images/a8c10b6d1426959eb3ce9c951073e8e0/desktop_screenshot/CP-IzMzj1v8CEAE=.jpeg?height=720&quality=90&width=1280"
+    ],
+    "iconUrl": "https://cdn.shopify.com/app-store/listing_images/a8c10b6d1426959eb3ce9c951073e8e0/icon/CITizPn6p_oCEAE=.png",
+    "pricing": [
+      {
+        "name": "FREE PLAN",
+        "price": "Free to install",
+        "note": "10 AI credits included monthly. Additional credits cost $1 each.",
+        "trial": null
+      },
+      {
+        "name": "Pro Plan",
+        "price": "",
+        "note": "50 AI credits included monthly. Additional credits cost $1 each.",
+        "trial": "Free trial available"
+      }
+    ],
+    "accent": "#D97706",
+    "highlights": [
+      "Use directly in Shopify admin",
+      "Works with the latest themes"
+    ],
+    "pricingPlans": [
+      {
+        "name": "FREE PLAN",
+        "price": "Free to install",
+        "period": "",
+        "yearly": "",
+        "note": "10 AI credits included monthly. Additional credits cost $1 each.",
+        "trial": "",
+        "features": [
+          "Local Business Schema",
+          "Product & breadcrumb schema",
+          "Article & blog page schema",
+          "Video & recipe schema",
+          "Organization schema",
+          "10 AI credits/month",
+          "10 AI image optimizations/month",
+          "10 AI meta tag actions/month"
+        ]
+      },
+      {
+        "name": "Pro Plan",
+        "price": "$8.99",
+        "period": "/ month",
+        "yearly": "or $59.88/year and save 44%",
+        "note": "50 AI credits included monthly. Additional credits cost $1 each.",
+        "trial": "7-day free trial",
+        "features": [
+          "All Free plan features",
+          "Product schema with star ratings",
+          "Sitelinks search box schema",
+          "FAQ schema for any page",
+          "Collection carousel schema",
+          "50 AI credits/month",
+          "50 image optimizations/month",
+          "50 meta tag actions/month"
+        ]
+      },
+      {
+        "name": "Advanced Plan",
+        "price": "$19.99",
+        "period": "/ month",
+        "yearly": "or $165/year and save 31%",
+        "note": "300 AI credits included monthly. Additional credits cost $1 each.",
+        "trial": "7-day free trial",
+        "features": [
+          "All Pro plan features",
+          "AI content optimization tools",
+          "Google Search Console analytics",
+          "300 AI credits/month",
+          "Unlimited image optimizations",
+          "Unlimited meta tag actions",
+          "Priority queue & task tracking",
+          "Priority support"
+        ]
+      }
+    ]
+  },
+  "noindexly": {
+    "name": "NoIndexly - Sitemap Manager",
+    "description": "In case you have more than one version of a page within your store, it's likely you'll face some content replication issues. That's why you need to...",
+    "features": [
+      "Product Page",
+      "Collection Page",
+      "Blog & Article Page",
+      "Page",
+      "XML Sitemap Guide",
+      "Bulk Settings",
+      "HTML Sitemap",
+      "Priority support"
+    ],
+    "ratingValue": 4.9,
+    "ratingCount": 19,
+    "screenshots": [
+      "https://cdn.shopify.com/app-store/listing_images/0fcd32cd0e007d4d6c59a8a26c0fc76e/desktop_screenshot/CNeE6obYufoCEAE=.jpeg?height=360&quality=90&width=640",
+      "https://cdn.shopify.com/app-store/listing_images/0fcd32cd0e007d4d6c59a8a26c0fc76e/desktop_screenshot/COiz9obYufoCEAE=.jpeg?height=360&quality=90&width=640",
+      "https://cdn.shopify.com/app-store/listing_images/0fcd32cd0e007d4d6c59a8a26c0fc76e/desktop_screenshot/CKS5g4fYufoCEAE=.jpeg?height=360&quality=90&width=640",
+      "https://cdn.shopify.com/app-store/listing_images/0fcd32cd0e007d4d6c59a8a26c0fc76e/desktop_screenshot/CNeE6obYufoCEAE=.jpeg?height=720&quality=90&width=1280"
+    ],
+    "iconUrl": "https://cdn.shopify.com/app-store/listing_images/0fcd32cd0e007d4d6c59a8a26c0fc76e/icon/CPyqxpqvufoCEAE=.png",
+    "pricing": [
+      {
+        "name": "Free Plan",
+        "price": "Free",
+        "note": "",
+        "trial": null
+      },
+      {
+        "name": "Pro Monthly Plan",
+        "price": "",
+        "note": "",
+        "trial": null
+      }
+    ],
+    "accent": "#DC2626",
+    "highlights": [
+      "Use directly in Shopify admin",
+      "Works with the latest themes"
+    ],
+    "pricingPlans": [
+      {
+        "name": "Free Plan",
+        "price": "Free",
+        "period": "",
+        "yearly": "",
+        "note": "",
+        "trial": "",
+        "features": [
+          "Product Page",
+          "Collection Page",
+          "Blog & Article Page",
+          "Page",
+          "XML Sitemap Guide"
+        ]
+      },
+      {
+        "name": "Pro Monthly Plan",
+        "price": "$3.49",
+        "period": "/ month",
+        "yearly": "or $35.88/year and save 14%",
+        "note": "",
+        "trial": "7-day free trial",
+        "features": [
+          "Product Page",
+          "Collection Page",
+          "Blog & Article Page",
+          "Page",
+          "XML Sitemap Guide",
+          "Bulk Settings",
+          "HTML Sitemap",
+          "Priority support"
+        ]
+      }
+    ]
+  },
+  "pixee": {
+    "name": "Pixee - Multi Pixel & Meta Ads",
+    "description": "Connect Facebook, TikTok & Pinterest pixels. Sync product feeds, track events, and boost ad results with Conversion API. GDPR-compliant. Free plan available.",
+    "features": [
+      "Single Facebook Pixel Integration",
+      "Single Tiktok Pixel Integration",
+      "Single Pinterest Pixel Integration",
+      "Consent Tracking",
+      "UNLIMITED Pixel Integrations",
+      "Track Advanced eCommerce Events",
+      "Track Custom Event",
+      "Facebook Conversion API Support",
+      "Consent Tracking & GDPR Banner",
+      "Product Feed & Catalog Sync",
+      "All Basic plan features",
+      "AI Ads Diagnostic Tool",
+      "AI Ad Copy Generator",
+      "500 AI Credits per month",
+      "Priority support"
+    ],
+    "ratingValue": 4.6,
+    "ratingCount": 71,
+    "screenshots": [],
+    "iconUrl": "https://cdn.shopify.com/app-store/listing_images/5ff251f2bb1d9d01bda6b8ac3b4b40db/icon/CPP2nL_Dp_oCEAE=.png",
+    "pricing": [
+      {
+        "name": "FREE PLAN",
+        "price": "Free",
+        "note": "",
+        "trial": null
+      },
+      {
+        "name": "Basic Plan",
+        "price": "",
+        "note": "",
+        "trial": null
+      }
+    ],
+    "accent": "#059669",
+    "highlights": [
+      "Use directly in Shopify admin",
+      "Works with the latest themes"
+    ],
+    "pricingPlans": [
+      {
+        "name": "FREE PLAN",
+        "price": "Free",
+        "period": "",
+        "yearly": "",
+        "note": "",
+        "trial": "",
+        "features": [
+          "Single Facebook Pixel Integration",
+          "Single Tiktok Pixel Integration",
+          "Single Pinterest Pixel Integration",
+          "Consent Tracking"
+        ]
+      },
+      {
+        "name": "Basic Plan",
+        "price": "$21",
+        "period": "/ month",
+        "yearly": "or $99/year and save 61%",
+        "note": "",
+        "trial": "7-day free trial",
+        "features": [
+          "UNLIMITED Pixel Integrations",
+          "Track Advanced eCommerce Events",
+          "Track Custom Event",
+          "Facebook Conversion API Support",
+          "Consent Tracking & GDPR Banner",
+          "Product Feed & Catalog Sync"
+        ]
+      },
+      {
+        "name": "AI Pro Plan",
+        "price": "$25",
+        "period": "/ month",
+        "yearly": "or $139/year and save 54%",
+        "note": "500 AI credits included monthly. Additional credits cost $1 each.",
+        "trial": "7-day free trial",
+        "features": [
+          "All Basic plan features",
+          "AI Ads Diagnostic Tool",
+          "AI Ad Copy Generator",
+          "500 AI Credits per month",
+          "Priority support"
+        ]
+      }
+    ]
+  },
+  "google-reviews": {
+    "name": "GroPulse Google Reviews",
+    "description": "GroPulse Google Reviews seamlessly integrates authentic Google reviews into your store. Easily import and display customer feedback, enhancing your...",
+    "features": [
+      "Review Widget Customization",
+      "Filter Reviews by Rating",
+      "Effortless layout personalization",
+      "All FREE plan features",
+      "Boosting Review through Email Automation",
+      "Multiple Business Location",
+      "Review collection on the Thank you page",
+      "Priority Support",
+      "Auto-update reviews (weekly)",
+      "Auto-update reviews (daily)"
+    ],
+    "ratingValue": 4.9,
+    "ratingCount": 72,
+    "screenshots": [],
+    "iconUrl": "https://cdn.shopify.com/app-store/listing_images/749e6bdc6924c8ac0ee0c6ab22566a45/icon/CPH_p_Op_P4CEAE=.png",
+    "pricing": [
+      {
+        "name": "FREE PLAN",
+        "price": "Free",
+        "note": "",
+        "trial": null
+      },
+      {
+        "name": "BASIC PLAN",
+        "price": "",
+        "note": "",
+        "trial": null
+      }
+    ],
+    "accent": "#F59E0B",
+    "highlights": [
+      "Use directly in Shopify admin",
+      "Works with the latest themes"
+    ],
+    "pricingPlans": [
+      {
+        "name": "FREE PLAN",
+        "price": "Free",
+        "period": "",
+        "yearly": "",
+        "note": "",
+        "trial": "",
+        "features": [
+          "Review Widget Customization",
+          "Filter Reviews by Rating",
+          "Effortless layout personalization"
+        ]
+      },
+      {
+        "name": "BASIC PLAN",
+        "price": "$5.99",
+        "period": "/ month",
+        "yearly": "or $47.88/year and save 33%",
+        "note": "",
+        "trial": "7-day free trial",
+        "features": [
+          "All FREE plan features",
+          "Boosting Review through Email Automation",
+          "Multiple Business Location",
+          "Review collection on the Thank you page",
+          "Priority Support",
+          "Auto-update reviews (weekly)"
+        ]
+      },
+      {
+        "name": "ADVANCE PLAN",
+        "price": "$9.99",
+        "period": "/ month",
+        "yearly": "or $83.88/year and save 30%",
+        "note": "",
+        "trial": "7-day free trial",
+        "features": [
+          "All FREE plan features",
+          "Boosting Review through Email Automation",
+          "Multiple Business Location",
+          "Review collection on the Thank you page",
+          "Priority Support",
+          "Auto-update reviews (daily)"
+        ]
+      }
+    ]
+  },
+  "gtm-data-layer": {
+    "name": "GroPulse GTM & Data Layer",
+    "description": "Server-side GTM tracking for Shopify with 40+ pre-built tags. Supports GA4, meta API, TikTok, Google Ads & 4+ platforms. Bypass ad blockers for accurate data.",
+    "features": [
+      "Install Google Tag Manager",
+      "GTM script on all pages",
+      "Thank you page GTM support",
+      "Checkout extensibility support",
+      "Basic GTM container setup",
+      "GDPR consent banner",
+      "No theme code editing required",
+      "Multi-language interface",
+      "All FREE plan features",
+      "Server-side event tracking",
+      "40+ pre-built GTM tags",
+      "1-click template generator",
+      "GA4, Facebook, TikTok & 5+ platforms",
+      "Event deduplication system",
+      "GDPR consent management",
+      "Facebook Conversion API (Meta CAPI)",
+      "All features from Pro plan",
+      "Real-time Server-Side Logs",
+      "In-depth Server-Side Analytics",
+      "Track all standard events",
+      "Custom events",
+      "Premium support"
+    ],
+    "ratingValue": 4.9,
+    "ratingCount": 38,
+    "screenshots": [
+      "https://cdn.shopify.com/app-store/listing_images/29ae53b3b51f0c8439bc21cab5c28004/desktop_screenshot/CMKWmL7m4_oCEAE=.jpeg?height=360&quality=90&width=640",
+      "https://cdn.shopify.com/app-store/listing_images/29ae53b3b51f0c8439bc21cab5c28004/desktop_screenshot/CN_5qL7m4_oCEAE=.jpeg?height=360&quality=90&width=640",
+      "https://cdn.shopify.com/app-store/listing_images/29ae53b3b51f0c8439bc21cab5c28004/desktop_screenshot/CK3atb7m4_oCEAE=.jpeg?height=360&quality=90&width=640",
+      "https://cdn.shopify.com/app-store/listing_images/29ae53b3b51f0c8439bc21cab5c28004/desktop_screenshot/CMKWmL7m4_oCEAE=.jpeg?height=720&quality=90&width=1280"
+    ],
+    "iconUrl": "https://cdn.shopify.com/app-store/listing_images/29ae53b3b51f0c8439bc21cab5c28004/icon/COCkgbTOoPoCEAE=.png",
+    "pricing": [
+      {
+        "name": "Free Plan",
+        "price": "Free",
+        "note": "",
+        "trial": null
+      },
+      {
+        "name": "Pro Plan",
+        "price": "",
+        "note": "",
+        "trial": null
+      }
+    ],
+    "accent": "#111827",
+    "highlights": [
+      "Use directly in Shopify admin",
+      "Works with the latest themes"
+    ],
+    "pricingPlans": [
+      {
+        "name": "Free Plan",
+        "price": "Free",
+        "period": "",
+        "yearly": "",
+        "note": "",
+        "trial": "",
+        "features": [
+          "Install Google Tag Manager",
+          "GTM script on all pages",
+          "Thank you page GTM support",
+          "Checkout extensibility support",
+          "Basic GTM container setup",
+          "GDPR consent banner",
+          "No theme code editing required",
+          "Multi-language interface"
+        ]
+      },
+      {
+        "name": "Pro Plan",
+        "price": "$29.99",
+        "period": "/ month",
+        "yearly": "or $95.88/year and save 73%",
+        "note": "",
+        "trial": "7-day free trial",
+        "features": [
+          "All FREE plan features",
+          "Server-side event tracking",
+          "40+ pre-built GTM tags",
+          "1-click template generator",
+          "GA4, Facebook, TikTok & 5+ platforms",
+          "Event deduplication system",
+          "GDPR consent management",
+          "Facebook Conversion API (Meta CAPI)"
+        ]
+      },
+      {
+        "name": "Advanced Plan",
+        "price": "$35",
+        "period": "/ month",
+        "yearly": "or $165/year and save 61%",
+        "note": "",
+        "trial": "7-day free trial",
+        "features": [
+          "All features from Pro plan",
+          "Real-time Server-Side Logs",
+          "In-depth Server-Side Analytics",
+          "Track all standard events",
+          "Custom events",
+          "1-click template generator",
+          "40+ pre-built GTM tags",
+          "Premium support"
+        ]
+      }
+    ]
+  },
+  "adtrack": {
+    "name": "AdTrack - Google Ads Tracking",
+    "description": "Accurately track Google Ads conversions, analyze campaigns with AI diagnostics, respect privacy with consent mode, and optimize performance easily.",
+    "features": [
+      "Auto track Google Ads conversions",
+      "Enhanced conversions tracking",
+      "Consent Mode v2 support",
+      "Manual conversion setup option",
+      "Add to cart and checkout events",
+      "All FREE plan features",
+      "Google Ads Performance Reports",
+      "Google Ads Diagnostic Tool",
+      "AI Ad Copy Generator",
+      "AI Ad Consultant Chat",
+      "Priority Support"
+    ],
+    "ratingValue": 4.2,
+    "ratingCount": 10,
+    "screenshots": [],
+    "iconUrl": "https://cdn.shopify.com/app-store/listing_images/e2c0de8584abd63168fdbea4f942f859/icon/CPOMncLSlP4CEAE=.png",
+    "pricing": [
+      {
+        "name": "Free",
+        "price": "Free",
+        "note": "",
+        "trial": null
+      },
+      {
+        "name": "Pro Plan",
+        "price": "",
+        "note": "10 AI credits included. Extra credits cost $1 each.",
+        "trial": "Free trial available"
+      }
+    ],
+    "accent": "#0F766E",
+    "highlights": [
+      "Use directly in Shopify admin",
+      "Works with the latest themes"
+    ],
+    "pricingPlans": [
+      {
+        "name": "Free",
+        "price": "Free",
+        "period": "",
+        "yearly": "",
+        "note": "",
+        "trial": "",
+        "features": [
+          "Auto track Google Ads conversions",
+          "Enhanced conversions tracking",
+          "Consent Mode v2 support",
+          "Manual conversion setup option",
+          "Add to cart and checkout events"
+        ]
+      },
+      {
+        "name": "Pro Plan",
+        "price": "$19",
+        "period": "/ month",
+        "yearly": "or $199/year and save 13%",
+        "note": "10 AI credits included. Extra credits cost $1 each.",
+        "trial": "7-day free trial",
+        "features": [
+          "All FREE plan features",
+          "Google Ads Performance Reports",
+          "Google Ads Diagnostic Tool",
+          "AI Ad Copy Generator",
+          "AI Ad Consultant Chat",
+          "Priority Support"
+        ]
+      }
+    ]
+  },
+  "codeup": {
+    "name": "CodeUp - Add Custom Code",
+    "description": "With CodeUp, you can add codes from Google Site Verification, Facebook Domain Verification, Google Analytics, Facebook Pixel, 3rd party script, liv...",
+    "features": [
+      "Insert JS/CSS in Head",
+      "Insert JS/CSS in Body",
+      "Load CSS/JS Based on Page Type"
+    ],
+    "ratingValue": 4.8,
+    "ratingCount": 11,
+    "screenshots": [
+      "https://cdn.shopify.com/app-store/listing_images/91dd927d136250427a3ae912bb59690e/desktop_screenshot/CM-czc3l7fkCEAE=.jpeg?height=360&quality=90&width=640",
+      "https://cdn.shopify.com/app-store/listing_images/91dd927d136250427a3ae912bb59690e/desktop_screenshot/CPHR2M3l7fkCEAE=.jpeg?height=360&quality=90&width=640",
+      "https://cdn.shopify.com/app-store/listing_images/91dd927d136250427a3ae912bb59690e/desktop_screenshot/COe9483l7fkCEAE=.jpeg?height=360&quality=90&width=640",
+      "https://cdn.shopify.com/app-store/listing_images/91dd927d136250427a3ae912bb59690e/desktop_screenshot/CM-czc3l7fkCEAE=.jpeg?height=720&quality=90&width=1280"
+    ],
+    "iconUrl": "https://cdn.shopify.com/app-store/listing_images/91dd927d136250427a3ae912bb59690e/icon/CKLVmpva6_kCEAE=.png",
+    "pricing": [
+      {
+        "name": "Free Plan",
+        "price": "Free",
+        "note": "",
+        "trial": null
+      }
+    ],
+    "accent": "#334155",
+    "highlights": [
+      "Use directly in Shopify admin",
+      "Works with the latest themes"
+    ],
+    "pricingPlans": [
+      {
+        "name": "Free Plan",
+        "price": "Free",
+        "period": "",
+        "yearly": "",
+        "note": "",
+        "trial": "",
+        "features": [
+          "Insert JS/CSS in Head",
+          "Insert JS/CSS in Body",
+          "Load CSS/JS Based on Page Type"
+        ]
+      }
+    ]
+  },
+  "free-shipping-bar": {
+    "name": "GP Free Shipping Bar",
+    "description": "Display a customizable free shipping bar to boost sales and conversions. Motivate customers to meet shipping goals with dynamic and responsive features.",
+    "features": [
+      "Top/Bottom Bar with Real-Time Progress",
+      "Brand Basics: Customize Colors & Fonts",
+      "Geographic and Device Targeting",
+      "Real-Time Tracker Shows Only X Away",
+      "Mobile-responsive and fast by default",
+      "Everything in Free",
+      "Product page bar (near Add to Cart)",
+      "Cart Page Bar - Drives Quick Checkout",
+      "Cart drawer bar for instant mobile nudge",
+      "Priority support",
+      "Everything in Pro",
+      "Schedule Settings for Smart Scheduling",
+      "Countdown timer for limited-time offers",
+      "Performance tracking",
+      "Priority support with faster response"
+    ],
+    "ratingValue": 4.6,
+    "ratingCount": 14,
+    "screenshots": [],
+    "iconUrl": "https://cdn.shopify.com/app-store/listing_images/a88775f6fdcfbbf2305a30837357557b/icon/CI-74smP0YoDEAE=.png",
+    "pricing": [
+      {
+        "name": "Free",
+        "price": "Free",
+        "note": "",
+        "trial": null
+      },
+      {
+        "name": "Pro",
+        "price": "",
+        "note": "",
+        "trial": null
+      }
+    ],
+    "accent": "#F97316",
+    "highlights": [
+      "Use directly in Shopify admin",
+      "Works with the latest themes"
+    ],
+    "pricingPlans": [
+      {
+        "name": "Free",
+        "price": "Free",
+        "period": "",
+        "yearly": "",
+        "note": "",
+        "trial": "",
+        "features": [
+          "Top/Bottom Bar with Real-Time Progress",
+          "Brand Basics: Customize Colors & Fonts",
+          "Geographic and Device Targeting",
+          "Real-Time Tracker Shows Only X Away",
+          "Mobile-responsive and fast by default"
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": "$4.99",
+        "period": "/ month",
+        "yearly": "or $39/year and save 35%",
+        "note": "",
+        "trial": "7-day free trial",
+        "features": [
+          "Everything in Free",
+          "Product page bar (near Add to Cart)",
+          "Cart Page Bar - Drives Quick Checkout",
+          "Cart drawer bar for instant mobile nudge",
+          "Priority support"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "$9.99",
+        "period": "/ month",
+        "yearly": "or $83.88/year and save 30%",
+        "note": "",
+        "trial": "7-day free trial",
+        "features": [
+          "Everything in Pro",
+          "Schedule Settings for Smart Scheduling",
+          "Countdown timer for limited-time offers",
+          "Performance tracking",
+          "Priority support with faster response"
+        ]
+      }
+    ]
+  },
+  "wishlist": {
+    "name": "GP - Wishlist & Upsell Suite",
+    "description": "Boost sales with GP Wishlist & Upsell Suite. Offer wishlists, upsells, bundles, volume discounts & reminders  all with advanced analytics.",
+    "features": [
+      "Guest Wishlist Support",
+      "Customizable Wishlist Styling",
+      "Back-in-Stock Alerts",
+      "Automated Reminder Emails",
+      "Upsell Offers on Products & Cart",
+      "Tiered Volume Discounts",
+      "Product Bundles with Discounts",
+      "Smart Product Recommendations"
+    ],
+    "ratingValue": 4.8,
+    "ratingCount": 10,
+    "screenshots": [
+      "https://cdn.shopify.com/app-store/listing_images/4cebd3dc23c5be65d40aa55d59ca16e4/desktop_screenshot/CPT_2OTzoYIDEAE=.jpeg?height=360&quality=90&width=640",
+      "https://cdn.shopify.com/app-store/listing_images/4cebd3dc23c5be65d40aa55d59ca16e4/desktop_screenshot/CPT_2OTzoYIDEAE=.jpeg?height=720&quality=90&width=1280",
+      "https://cdn.shopify.com/app-store/listing_images/4cebd3dc23c5be65d40aa55d59ca16e4/desktop_screenshot/COn34eTzoYIDEAE=.jpeg?height=720&quality=90&width=1280",
+      "https://cdn.shopify.com/app-store/listing_images/4cebd3dc23c5be65d40aa55d59ca16e4/desktop_screenshot/CPT_2OTzoYIDEAE=.jpeg?height=900&quality=90&width=1600"
+    ],
+    "iconUrl": "https://cdn.shopify.com/app-store/listing_images/4cebd3dc23c5be65d40aa55d59ca16e4/icon/CPrbseTzoYIDEAE=.png",
+    "pricing": [
+      {
+        "name": "Free",
+        "price": "Free",
+        "note": "",
+        "trial": null
+      }
+    ],
+    "accent": "#DB2777",
+    "highlights": [
+      "Use directly in Shopify admin",
+      "Works with the latest themes"
+    ],
+    "pricingPlans": [
+      {
+        "name": "Free",
+        "price": "Free",
+        "period": "",
+        "yearly": "",
+        "note": "",
+        "trial": "",
+        "features": [
+          "Guest Wishlist Support",
+          "Customizable Wishlist Styling",
+          "Back-in-Stock Alerts",
+          "Automated Reminder Emails",
+          "Upsell Offers on Products & Cart",
+          "Tiered Volume Discounts",
+          "Product Bundles with Discounts",
+          "Smart Product Recommendations"
+        ]
+      }
+    ]
+  },
+  "salespulse": {
+    "name": "SalesPulse - Sales Pop Up",
+    "description": "SalesPulse - Sales Pop Up is a robust application made to promote sales and customer engagement. By informing visitors about recent orders, you can...",
+    "features": [
+      "Sales Notification Popups",
+      "Announcement Bars (1 announcement bar)",
+      "Announcement Bar Templates (3 templates)",
+      "Popup Campaigns (1 campaign)",
+      "Popup Templates (4 templates)",
+      "Form Fields (1 form field)",
+      "Analytics History (30 days)",
+      "Support",
+      "Everything in Free",
+      "Announcement Bars (5 announcement bars)",
+      "Announcement Bar Templates (9 templates)",
+      "Popup Campaigns (5 campaigns)",
+      "Popup Templates (8 templates)",
+      "Form Fields (3 form fields)",
+      "Analytics History (60 days)",
+      "Priority support",
+      "Everything in Growth",
+      "Announcement Bars (unlimited bars)",
+      "Announcement Bar Templates(15 templates)",
+      "Popup Campaigns (unlimited campaigns)",
+      "Popup Templates (20 templates)",
+      "Form Fields (5 form fields)",
+      "Analytics History (90 days)"
+    ],
+    "ratingValue": 5.0,
+    "ratingCount": 1,
+    "screenshots": [],
+    "iconUrl": "https://cdn.shopify.com/app-store/listing_images/819360cec9a16bbf34796306f046a3e6/icon/CNHos9O5z4ADEAE=.png",
+    "pricing": [
+      {
+        "name": "Free",
+        "price": "Free",
+        "note": "",
+        "trial": null
+      },
+      {
+        "name": "Growth",
+        "price": "",
+        "note": "",
+        "trial": null
+      }
+    ],
+    "accent": "#7C3AED",
+    "highlights": [
+      "Use directly in Shopify admin",
+      "Works with the latest themes"
+    ],
+    "pricingPlans": [
+      {
+        "name": "Free",
+        "price": "Free",
+        "period": "",
+        "yearly": "",
+        "note": "",
+        "trial": "",
+        "features": [
+          "Sales Notification Popups",
+          "Announcement Bars (1 announcement bar)",
+          "Announcement Bar Templates (3 templates)",
+          "Popup Campaigns (1 campaign)",
+          "Popup Templates (4 templates)",
+          "Form Fields (1 form field)",
+          "Analytics History (30 days)",
+          "Support"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "$6.99",
+        "period": "/ month",
+        "yearly": "or $67.08/year and save 20%",
+        "note": "",
+        "trial": "7-day free trial",
+        "features": [
+          "Everything in Free",
+          "Announcement Bars (5 announcement bars)",
+          "Announcement Bar Templates (9 templates)",
+          "Popup Campaigns (5 campaigns)",
+          "Popup Templates (8 templates)",
+          "Form Fields (3 form fields)",
+          "Analytics History (60 days)",
+          "Priority support"
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": "$11.99",
+        "period": "/ month",
+        "yearly": "or $119.88/year and save 17%",
+        "note": "",
+        "trial": "7-day free trial",
+        "features": [
+          "Everything in Growth",
+          "Announcement Bars (unlimited bars)",
+          "Announcement Bar Templates(15 templates)",
+          "Popup Campaigns (unlimited campaigns)",
+          "Popup Templates (20 templates)",
+          "Form Fields (5 form fields)",
+          "Analytics History (90 days)",
+          "Priority support"
+        ]
+      }
+    ]
+  },
+  "helpmate": {
+    "name": "HelpMate - FAQ & Help Center",
+    "description": "The \"HelpMate - FAQ & Help Center\" app is designed to enhance user convenience. It allows you to place a floating button on the storefront, enablin...",
+    "features": [
+      "Organize FAQs by Category",
+      "Floating FAQ Button on Storefront"
+    ],
+    "ratingValue": 5.0,
+    "ratingCount": 1,
+    "screenshots": [
+      "https://cdn.shopify.com/app-store/listing_images/f0405949055083848313d6e27a9e658b/desktop_screenshot/CPSJj7-64YMDEAE=.jpeg?height=720&quality=90&width=1280",
+      "https://cdn.shopify.com/app-store/listing_images/f0405949055083848313d6e27a9e658b/desktop_screenshot/CPSJj7-64YMDEAE=.jpeg?height=900&quality=90&width=1600",
+      "https://cdn.shopify.com/app-store/listing_images/f0405949055083848313d6e27a9e658b/desktop_screenshot/CPSJj7-64YMDEAE=.jpeg?height=1800&quality=90&width=3200"
+    ],
+    "iconUrl": "https://cdn.shopify.com/app-store/listing_images/f0405949055083848313d6e27a9e658b/icon/CIL29Jmi_P4CEAE=.png",
+    "pricing": [
+      {
+        "name": "Free",
+        "price": "Free",
+        "note": "",
+        "trial": null
+      }
+    ],
+    "accent": "#2563EB",
+    "highlights": [
+      "Use directly in Shopify admin",
+      "Works with the latest themes"
+    ],
+    "pricingPlans": [
+      {
+        "name": "Free",
+        "price": "Free",
+        "period": "",
+        "yearly": "",
+        "note": "",
+        "trial": "",
+        "features": [
+          "Organize FAQs by Category",
+          "Floating FAQ Button on Storefront"
+        ]
+      }
+    ]
+  }
+}

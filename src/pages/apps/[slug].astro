@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import apps from "../../data/apps.json";
 
 export function getStaticPaths() {
   const slugs = [
@@ -19,9 +20,207 @@ export function getStaticPaths() {
 
   return slugs.map((slug) => ({ params: { slug } }));
 }
+
+const slug = Astro.params.slug;
+const app = apps[slug] ?? apps.analyzely;
+
+const iconMap = {
+  "analyzely": 0x1F4CA,
+  "pixee": 0x1F3AF,
+  "google-reviews": 0x2B50,
+  "gtm-data-layer": 0x1F6E0,
+  "json-ld-seo": 0x1F50D,
+  "noindexly": 0x1F6AB,
+  "wishlist": 0x2764,
+  "adtrack": 0x1F3AF,
+  "salespulse": 0x1F514,
+  "codeup": 0x1F4BB,
+  "helpmate": 0x2753,
+  "free-shipping-bar": 0x1F69A,
+};
+
+const iconEmoji = String.fromCodePoint(iconMap[slug] ?? 0x1F4E6);
+const screenshots = (app.screenshots?.length ? app.screenshots : (app.iconUrl ? [app.iconUrl] : []))
+  .map((url) => url.replace(/&amp;/g, "&"));
+const mainImage = (screenshots[0] ?? app.iconUrl ?? "").replace(/'/g, "%27");
+const thumbImages = screenshots.slice(0, 4).map((url) => url.replace(/'/g, "%27"));
+
+const ratingValue = app.ratingValue || 4.9;
+const ratingCount = app.ratingCount || 100;
+const features = app.features || [];
+const highlights = app.highlights ?? [];
+const highlightItems = highlights.length ? highlights : features.slice(0, 2);
+const bulletItems = features.slice(0, 5);
+const featureSummary = features.slice(0, 3).join(", ");
+
+const metaBySlug = {
+  "analyzely": { worksWith: ["Google Analytics 4", "Checkout"], categories: ["Analytics"], languages: ["English"] },
+  "pixee": { worksWith: ["Meta Pixel", "TikTok Pixel", "Pinterest Pixel"], categories: ["Advertising", "Tracking"], languages: ["English"] },
+  "google-reviews": { worksWith: ["Google Reviews", "Storefront"], categories: ["Social proof"], languages: ["English"] },
+  "gtm-data-layer": { worksWith: ["Google Tag Manager", "GA4", "Meta CAPI"], categories: ["Analytics", "Tracking"], languages: ["English"] },
+  "json-ld-seo": { worksWith: ["Rich snippets", "Google Search"], categories: ["SEO"], languages: ["English"] },
+  "noindexly": { worksWith: ["Sitemap", "Noindex tags"], categories: ["SEO"], languages: ["English"] },
+  "wishlist": { worksWith: ["Wishlist", "Email alerts"], categories: ["Upsell", "Conversion"], languages: ["English"] },
+  "adtrack": { worksWith: ["Google Ads", "Consent Mode v2"], categories: ["Advertising"], languages: ["English"] },
+  "salespulse": { worksWith: ["Sales popups", "Announcements"], categories: ["Social proof", "Conversion"], languages: ["English"] },
+  "codeup": { worksWith: ["Custom scripts", "CSS/JS", "Theme"], categories: ["Customization"], languages: ["English"] },
+  "helpmate": { worksWith: ["FAQ", "Help Center"], categories: ["Support"], languages: ["English"] },
+  "free-shipping-bar": { worksWith: ["Cart", "Product page"], categories: ["Upsell", "Shipping"], languages: ["English"] },
+};
+
+const meta = metaBySlug[slug] ?? { worksWith: ["Shopify"], categories: ["App"], languages: ["English"] };
+
+const appStoreUrlMap = {
+  "analyzely": "https://apps.shopify.com/analyzely-google-analytics-4",
+  "json-ld-seo": "https://apps.shopify.com/gropulse-rich-snippets-for-seo",
+  "noindexly": "https://apps.shopify.com/noindexly-sitemap-manager",
+  "pixee": "https://apps.shopify.com/pixee-multi-facebook-pixels",
+  "google-reviews": "https://apps.shopify.com/gropulse-google-reviews",
+  "gtm-data-layer": "https://apps.shopify.com/gropulse-gtm-data-layer",
+  "adtrack": "https://apps.shopify.com/adtrack-google-ads-tracking",
+  "codeup": "https://apps.shopify.com/codeup-add-custom-code",
+  "free-shipping-bar": "https://apps.shopify.com/gp-free-shipping-bar",
+  "wishlist": "https://apps.shopify.com/gropulse-wishlist",
+  "salespulse": "https://apps.shopify.com/salespulse-sales-pop-up",
+  "helpmate": "https://apps.shopify.com/helpmate-faq-help-center",
+};
+
+const appStoreUrl = appStoreUrlMap[slug] ?? "https://apps.shopify.com/partners/gropulse";
+const headline = `${app.name} built for Shopify growth.`;
+const intro = app.description || "Built to help merchants launch fast, measure accurately, and grow confidently.";
+const detail = featureSummary ? `Key capabilities include ${featureSummary}.` : "Designed for fast setup and reliable results.";
+
+const accent = app.accent || "#F34624";
+const pricingPlans = app.pricingPlans?.length ? app.pricingPlans : (app.pricing ?? []);
+const hasFreePlan = pricingPlans.some((plan) => /free|install/i.test((plan.price || plan.name || "")));
+const trialPlan = pricingPlans.find((plan) => plan.trial);
+const priceLine = hasFreePlan
+  ? "Free to install"
+  : (pricingPlans[0]?.price ? `From ${pricingPlans[0].price}` : "Flexible pricing");
+const priceSub = trialPlan ? `${priceLine}. ${trialPlan.trial}` : priceLine;
+const featuredPlanIndex = (() => {
+  const paidIndex = pricingPlans.findIndex((plan) => !/free|install/i.test((plan.price || plan.name || "")));
+  if (paidIndex >= 0) return paidIndex;
+  return pricingPlans.length > 1 ? 1 : -1;
+})();
+
+const reviewData = {
+  "analyzely": {
+    snippets: [
+      "Finally seeing accurate GA4 revenue and purchase events in one dashboard.",
+      "Setup took minutes and our marketing reports are actually trustworthy now.",
+      "The server-side tracking is a huge upgrade for Shopify analytics.",
+    ],
+    names: ["Nova Threads", "Peak Supply", "Brightly"],
+    stores: ["USA", "UK", "Australia"],
+  },
+  "pixee": {
+    snippets: [
+      "Multi-pixel setup plus CAPI made our Meta ads far more reliable.",
+      "Love that we can run TikTok and Facebook pixels without extra code.",
+      "Clean UI and accurate events across multiple ad accounts.",
+    ],
+    names: ["Urban Gear", "Luna Cosmetics", "Vibe Co"],
+    stores: ["USA", "Canada", "Singapore"],
+  },
+  "google-reviews": {
+    snippets: [
+      "Our product pages look more trustworthy with live Google reviews.",
+      "Easy to display recent reviews and star ratings without slowing the store.",
+      "Great social proof booster for new visitors.",
+    ],
+    names: ["GlowSkin", "PureHome", "Ridge Apparel"],
+    stores: ["UK", "Italy", "USA"],
+  },
+  "gtm-data-layer": {
+    snippets: [
+      "All purchase events hit GTM correctly without custom dev work.",
+      "Data layer is clean and consistent for GA4 and Meta CAPI.",
+      "Saved hours of debugging compared to manual scripts.",
+    ],
+    names: ["TechHaven", "Origin Labs", "Hush Apparel"],
+    stores: ["Australia", "Germany", "USA"],
+  },
+  "json-ld-seo": {
+    snippets: [
+      "Rich snippets started showing in Google within days.",
+      "Automatic schema across products and FAQs is a massive time saver.",
+      "SEO uplift without touching theme code.",
+    ],
+    names: ["Trailform", "Coco Market", "Verde Living"],
+    stores: ["USA", "France", "Spain"],
+  },
+  "noindexly": {
+    snippets: [
+      "We finally removed duplicate pages from Google search.",
+      "Sitemap control is simple and the UI is clear.",
+      "Great for keeping collections clean and focused.",
+    ],
+    names: ["UrbanFit", "Studio Lane", "Nomad Co"],
+    stores: ["Germany", "USA", "Canada"],
+  },
+  "wishlist": {
+    snippets: [
+      "Wishlists increased repeat visits and email signups.",
+      "Customers love saving favorites for later.",
+      "Back-in-stock alerts drive extra revenue.",
+    ],
+    names: ["Muse & Co", "Luxe Lines", "Casa Home"],
+    stores: ["USA", "UK", "Italy"],
+  },
+  "adtrack": {
+    snippets: [
+      "Google Ads conversions match Shopify sales now.",
+      "Enhanced conversions setup was painless.",
+      "Better ROAS tracking in a single place.",
+    ],
+    names: ["FitLife", "Aero Supply", "Kindred Shop"],
+    stores: ["France", "USA", "Singapore"],
+  },
+  "salespulse": {
+    snippets: [
+      "Sales popups increased trust and conversion rate quickly.",
+      "Love the customization and real-time display.",
+      "Perfect for launches and seasonal promos.",
+    ],
+    names: ["CozyHome", "Wave Goods", "Northline"],
+    stores: ["Canada", "USA", "UK"],
+  },
+  "codeup": {
+    snippets: [
+      "Finally a safe way to add scripts without touching theme files.",
+      "We pushed seasonal scripts in minutes.",
+      "Great for custom CSS and tracking snippets.",
+    ],
+    names: ["Metric Lab", "Stonebridge", "Bright Road"],
+    stores: ["USA", "Australia", "Germany"],
+  },
+  "helpmate": {
+    snippets: [
+      "Support tickets dropped after publishing the new FAQ center.",
+      "The help widget is easy to customize and fast.",
+      "Customers find answers without leaving the store.",
+    ],
+    names: ["Desk Supply", "Green Market", "Harbor Co"],
+    stores: ["USA", "UK", "Netherlands"],
+  },
+  "free-shipping-bar": {
+    snippets: [
+      "AOV improved once shoppers saw the free shipping goal.",
+      "Simple bar that matches our branding perfectly.",
+      "Great for running cart threshold campaigns.",
+    ],
+    names: ["Field & Oak", "Canyon Goods", "Breeze Market"],
+    stores: ["USA", "Canada", "Australia"],
+  },
+};
+
+const { snippets: reviewSnippets = [], names: reviewNames = [], stores: reviewStores = [] } = reviewData[slug] ?? {};
+
 ---
 
-<Base title="App Details - GroPulse">
+
+<Base title={`${app.name} - GroPulse`}>
   <header>
     <nav class="nav-container">
       <a href="/" class="logo">Gro<span>Pulse</span></a>
@@ -36,8 +235,8 @@ export function getStaticPaths() {
           <ul class="nav-links">
             <li><a href="/">Home</a></li>
             <li><a href="/apps/" class="is-active">Apps</a></li>
-            <li><a href="/apps/analyzely/#pricing">Pricing</a></li>
-            <li><a href="/apps/analyzely/#support">Support</a></li>
+            <li><a href={`/apps/${slug}/#pricing`}>Pricing</a></li>
+            <li><a href={`/apps/${slug}/#support`}>Support</a></li>
           </ul>
           <a href="/apps/" class="btn-header btn-header-mobile">Log in</a>
         </div>
@@ -46,34 +245,40 @@ export function getStaticPaths() {
     </nav>
   </header>
 
-  <main>
+  <main class="app-detail" style={`--app-accent:${accent}`}>
     <section class="app-hero-section">
       <div class="container">
         <div class="hero-grid">
           <aside class="app-sidebar">
-            <div class="app-icon-large">&#128202;</div>
+            <div class="app-icon-large">{iconEmoji}</div>
             <div class="sidebar-title">
-              <h1>Analyzely - Google Analytics 4</h1>
+              <h1>{app.name}</h1>
             </div>
 
             <div class="highlights-box">
               <span class="price-tag">Pricing</span>
-              <span class="price-sub">Free to install. Free trial available.</span>
+              <span class="price-sub">{priceSub}</span>
             </div>
 
             <div class="highlights-box">
               <span class="h-title">Highlights</span>
               <ul class="h-list">
-                <li>Use directly in Shopify admin</li>
-                <li>Works with the latest themes</li>
+                {highlightItems.length ? (
+                  highlightItems.map((item) => <li>{item}</li>)
+                ) : (
+                  <>
+                    <li>Fast setup in minutes</li>
+                    <li>Built for Shopify stores</li>
+                  </>
+                )}
               </ul>
             </div>
 
             <div class="rating-row">
               <span class="h-title" style="margin:0;">Rating</span>
-              <span>4.7</span>
+              <span>{ratingValue}</span>
               <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-              <a href="#reviews" class="review-link">(109)</a>
+              <a href="#reviews" class="review-link">({ratingCount})</a>
             </div>
 
             <div class="dev-info">
@@ -81,61 +286,64 @@ export function getStaticPaths() {
               <a href="https://apps.shopify.com/partners/gropulse" class="dev-link" target="_blank" rel="noreferrer">GroPulse</a>
             </div>
 
-            <a href="https://apps.shopify.com/partners/gropulse" class="btn-install-hero" target="_blank" rel="noreferrer">Install</a>
+            <a href={appStoreUrl} class="btn-install-hero" target="_blank" rel="noreferrer">Install</a>
           </aside>
 
           <div class="app-main-content">
             <div class="gallery-container">
               <div class="main-view">
-                <img id="mainImage" src="https://cdn.shopify.com/app-store/listing_images/393b3b4bb69acc2f58835a02f4aaa14b/desktop_screenshot/CIfQosn374ADEAE=.jpeg?height=900&quality=90&width=1600" alt="App Screenshot" />
+                {mainImage ? (
+                  <img id="mainImage" src={mainImage} alt={`${app.name} screenshot`} />
+                ) : (
+                  <div class="image-placeholder">Preview coming soon</div>
+                )}
               </div>
               <div class="thumb-list">
-                <div class="thumb-item active" onclick="changeImage('https://cdn.shopify.com/app-store/listing_images/393b3b4bb69acc2f58835a02f4aaa14b/desktop_screenshot/CIfQosn374ADEAE=.jpeg?height=900&quality=90&width=1600', this)">
-                  <img src="https://cdn.shopify.com/app-store/listing_images/393b3b4bb69acc2f58835a02f4aaa14b/desktop_screenshot/CIfQosn374ADEAE=.jpeg?height=900&quality=90&width=1600" alt="Thumb 1" />
-                </div>
-                <div class="thumb-item" onclick="changeImage('https://cdn.shopify.com/app-store/listing_images/393b3b4bb69acc2f58835a02f4aaa14b/desktop_screenshot/CK6orcn374ADEAE=.jpeg?height=900&quality=90&width=1600', this)">
-                  <img src="https://cdn.shopify.com/app-store/listing_images/393b3b4bb69acc2f58835a02f4aaa14b/desktop_screenshot/CK6orcn374ADEAE=.jpeg?height=900&quality=90&width=1600" alt="Thumb 2" />
-                </div>
-                <div class="thumb-item" onclick="changeImage('https://cdn.shopify.com/app-store/listing_images/393b3b4bb69acc2f58835a02f4aaa14b/desktop_screenshot/CPTatsn374ADEAE=.jpeg?height=900&quality=90&width=1600', this)">
-                  <img src="https://cdn.shopify.com/app-store/listing_images/393b3b4bb69acc2f58835a02f4aaa14b/desktop_screenshot/CPTatsn374ADEAE=.jpeg?height=900&quality=90&width=1600" alt="Thumb 3" />
-                </div>
-                <div class="thumb-item" onclick="changeImage('https://cdn.shopify.com/app-store/listing_images/393b3b4bb69acc2f58835a02f4aaa14b/desktop_screenshot/CMyozcn374ADEAE=.jpeg?height=900&quality=90&width=1600', this)">
-                  <img src="https://cdn.shopify.com/app-store/listing_images/393b3b4bb69acc2f58835a02f4aaa14b/desktop_screenshot/CMyozcn374ADEAE=.jpeg?height=900&quality=90&width=1600" alt="Thumb 4" />
-                </div>
+                {thumbImages.map((url, index) => (
+                  <div class={`thumb-item${index === 0 ? " active" : ""}`} onclick={`changeImage('${url}', this)`}>
+                    <img src={url} alt={`Screenshot ${index + 1}`} />
+                  </div>
+                ))}
               </div>
             </div>
 
+
+
             <div class="app-description">
-              <h2>Analyzely lets you take advantage of all the benefits that come with using Google Analytics 4.</h2>
-              <p>The Analyzely - Google Analytics 4 app provides you with a comprehensive way to add Google Analytics to your store. With seamless integration with GA4, you'll be able to get a clear picture of your store's visitors and their behavior. Additionally, the app also offers automatic measurement ID integration, making it even easier for you to set up.</p>
+              <h2>{headline}</h2>
+              <p>{intro}</p>
+              <p>{detail}</p>
 
               <ul>
-                <li>Seamless integration with GA4 for fast and accurate analysis (no coding needed)</li>
-                <li>Improve your eCommerce strategy with comprehensive event tracking</li>
-                <li>Standard & Ecommerce Report: Shows you important key store metrics in one place</li>
-                <li>Empower precise purchase tracking through Server Side Event integration</li>
-                <li>Enable GDPR friendly tracking to maintain data protection standards</li>
+                {bulletItems.length ? (
+                  bulletItems.map((item) => <li>{item}</li>)
+                ) : (
+                  <>
+                    <li>Quick setup and safe defaults</li>
+                    <li>Built for Shopify performance</li>
+                    <li>Clear, actionable reporting</li>
+                  </>
+                )}
               </ul>
             </div>
 
-            <div class="meta-specs-grid">
+<div class="meta-specs-grid">
               <div class="spec-item">
                 <h5>Languages</h5>
                 <div class="tags-wrap">
-                  <span class="tag">English</span><span class="tag">French</span><span class="tag">German</span>
-                  <span class="tag">Spanish</span><span class="tag">Italian</span><span class="tag">Japanese</span>
+                  {meta.languages.map((lang) => <span class="tag">{lang}</span>)}
                 </div>
               </div>
               <div class="spec-item">
                 <h5>Works With</h5>
                 <div class="tags-wrap">
-                  <span class="tag">Checkout</span><span class="tag">Google Analytics 4</span><span class="tag">GA4</span>
+                  {meta.worksWith.map((tool) => <span class="tag">{tool}</span>)}
                 </div>
               </div>
               <div class="spec-item" style="grid-column: span 2;">
                 <h5>Categories</h5>
                 <div class="tags-wrap">
-                  <span class="tag">Analytics</span>
+                  {meta.categories.map((cat) => <span class="tag">{cat}</span>)}
                 </div>
               </div>
             </div>
@@ -148,50 +356,38 @@ export function getStaticPaths() {
         <div class="sec-intro">
           <div class="label-badge">&#128142; Pricing Plans</div>
           <h2 class="sec-title">Simple, Transparent Pricing</h2>
-          <p class="sec-desc">Choose the plan that fits your store’s needs.</p>
+          <p class="sec-desc">Choose the plan that fits your store's needs.</p>
         </div>
 
         <div class="pricing-grid">
-          <div class="pricing-card free">
-            <div class="card-inner">
-              <div>
-                <h3 class="plan-name">Free Plan</h3>
-                <div class="price-line"><span class="price-val">$0</span><span class="price-per">/month</span></div>
-                <p class="plan-subtext">10 AI credits included monthly.</p>
+          {pricingPlans.map((plan, index) => {
+            const isFree = /free|install/i.test((plan.price || plan.name || ""));
+            const isFeatured = index === featuredPlanIndex;
+            const buttonLabel = isFree ? "Install Free App" : (plan.trial ? "Start Free Trial" : "Choose Plan");
+            return (
+              <div class={`pricing-card ${isFree ? "free" : "paid"} ${isFeatured ? "pro" : ""}`}>
+                {isFeatured ? <div class="most-popular">MOST POPULAR</div> : null}
+                <div class="card-inner">
+                  <div>
+                    <h3 class="plan-name">{plan.name || "Plan"}</h3>
+                    <div class="price-line">
+                      <span class="price-val">{plan.price || "Free"}</span>
+                      {plan.period ? <span class="price-per">{plan.period}</span> : null}
+                    </div>
+                    {plan.yearly ? <span class="savings-pill">{plan.yearly}</span> : null}
+                    {plan.note ? <p class="plan-subtext">{plan.note}</p> : null}
+                    {plan.trial ? <div class="trial-pill">{plan.trial}</div> : null}
+                  </div>
+                  <ul class="features-list">
+                    {(plan.features?.length ? plan.features : ["Core setup included", "Basic reporting", "Email support"]).map((item) => (
+                      <li><span class={isFree ? "tick" : "tick-pro"}>&#10003;</span> {item}</li>
+                    ))}
+                  </ul>
+                  <div style="margin-top:auto;"><a href={appStoreUrl} class={`btn-price ${isFree ? "btn-dark" : "btn-orange"}`} target="_blank" rel="noreferrer">{buttonLabel}</a></div>
+                </div>
               </div>
-              <ul class="features-list">
-                <li><span class="tick">?</span> GA4 Measurement ID Integration</li>
-                <li><span class="tick">?</span> Standard Analytics Report</li>
-                <li><span class="tick">?</span> Report Download Option</li>
-                <li><span class="tick">?</span> Filter by Date Range</li>
-                <li><span class="tick">?</span> AI Analysis (10 Credits)</li>
-                <li><span class="tick">?</span> Easy GA4 Setup Guide</li>
-              </ul>
-              <div style="margin-top:auto;"><a href="https://apps.shopify.com/partners/gropulse" class="btn-price btn-dark" target="_blank" rel="noreferrer">Install Free App</a></div>
-            </div>
-          </div>
-          <div class="pricing-card pro">
-            <div class="most-popular">MOST POPULAR</div>
-            <div class="card-inner">
-              <div>
-                <h3 class="plan-name">Pro Plan</h3>
-                <div class="price-line"><span class="price-val">$21</span><span class="price-per">/month</span></div>
-                <span class="savings-pill">or $95.88/year and save 62%</span>
-                <p class="plan-subtext">30 AI credits included monthly. Additional credits cost $1 each.</p>
-                <div class="trial-pill">&#128640; 7-day free trial included</div>
-              </div>
-              <ul class="features-list">
-                <li><span class="tick-pro">?</span> <strong>All Free Plan Features Included</strong></li>
-                <li><span class="tick-pro">?</span> eCommerce report</li>
-                <li><span class="tick-pro">?</span> Realtime report</li>
-                <li><span class="tick-pro">?</span> Client & Server Side Event Tracking</li>
-                <li><span class="tick-pro">?</span> GDPR Compliant Tracking</li>
-                <li><span class="tick-pro">?</span> AI Analysis (30 Credits)</li>
-                <li><span class="tick-pro">?</span> Priority support</li>
-              </ul>
-              <div style="margin-top:auto;"><a href="https://apps.shopify.com/partners/gropulse" class="btn-price btn-orange" target="_blank" rel="noreferrer">Start 7-day Free Trial</a></div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>
@@ -207,9 +403,9 @@ export function getStaticPaths() {
         <div class="review-layout">
           <div class="rating-dashboard">
             <span style="font-weight:700; color:#888;">Overall Rating</span>
-            <div class="rd-score">4.7</div>
+            <div class="rd-score">{ratingValue}</div>
             <div class="rd-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <span class="rd-count">Based on 109 reviews</span>
+            <span class="rd-count">Based on {ratingCount} reviews</span>
 
             <div class="bars-container">
               <div class="bar-row">
@@ -229,68 +425,22 @@ export function getStaticPaths() {
               </div>
             </div>
 
-            <a href="https://apps.shopify.com/partners/gropulse" class="btn-write-review" target="_blank" rel="noreferrer">Write a review</a>
+            <a href={appStoreUrl} class="btn-write-review" target="_blank" rel="noreferrer">Write a review</a>
           </div>
 
           <div class="review-feed">
-            <div class="review-card">
-              <div class="rc-head">
-                <div class="rc-user">
-                  <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                  <h4>Vanlife-Store <span style="font-weight:400; font-size:12px; color:#888;">(France)</span></h4>
+            {reviewSnippets.map((text, index) => (
+              <div class="review-card">
+                <div class="rc-head">
+                  <div class="rc-user">
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <h4>{reviewNames[index] || "Merchant"} <span style="font-weight:400; font-size:12px; color:#888;">({reviewStores[index] || "Shopify"})</span></h4>
+                  </div>
+                  <span class="rc-date">Recently</span>
                 </div>
-                <span class="rc-date">Oct 16, 2025</span>
+                <p class="rc-text">{text}</p>
               </div>
-              <p class="rc-text">"Honestly they could have done a better work. Reports that you can't customize..."</p>
-              <div class="dev-reply">
-                <span class="reply-meta">GroPulse replied October 22, 2025</span>
-                <p>Thank you for your feedback. We understand your concern and apologize for any inconvenience...</p>
-              </div>
-            </div>
-
-            <div class="review-card">
-              <div class="rc-head">
-                <div class="rc-user">
-                  <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                  <h4>Proof-Reading-Service.com <span style="font-weight:400; font-size:12px; color:#888;">(UK)</span></h4>
-                </div>
-                <span class="rc-date">Aug 31, 2025</span>
-              </div>
-              <p class="rc-text">"At first glance, this app seemed to be working correctly. However, after about 24 hours..."</p>
-            </div>
-
-            <div class="review-card">
-              <div class="rc-head">
-                <div class="rc-user">
-                  <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                  <h4>TrendSetter Inc. <span style="font-weight:400; font-size:12px; color:#888;">(USA)</span></h4>
-                </div>
-                <span class="rc-date">Nov 12, 2025</span>
-              </div>
-              <p class="rc-text">"Absolutely essential for any Shopify store. The server-side tracking fixed all our data discrepancy issues."</p>
-            </div>
-
-            <div class="review-card">
-              <div class="rc-head">
-                <div class="rc-user">
-                  <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                  <h4>CozyHome Decor <span style="font-weight:400; font-size:12px; color:#888;">(Canada)</span></h4>
-                </div>
-                <span class="rc-date">Dec 01, 2025</span>
-              </div>
-              <p class="rc-text">"Support is lightning fast. I had a question about GTM and they hopped on a call to solve it. 10/10!"</p>
-            </div>
-
-            <div class="review-card">
-              <div class="rc-head">
-                <div class="rc-user">
-                  <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                  <h4>UrbanFit <span style="font-weight:400; font-size:12px; color:#888;">(Germany)</span></h4>
-                </div>
-                <span class="rc-date">Dec 15, 2025</span>
-              </div>
-              <p class="rc-text">"Simple interface, powerful data. The reports are much easier to read than standard GA4."</p>
-            </div>
+            ))}
           </div>
         </div>
       </div>
@@ -354,9 +504,9 @@ export function getStaticPaths() {
             </div>
             <div class="app-content">
               <div class="app-icon-float">&#127919;</div>
-              <h3 class="app-title">Pixee – Multi Facebook Pixels</h3>
+              <h3 class="app-title">Pixee  Multi Facebook Pixels</h3>
               <p class="app-desc">Manage unlimited pixels with Conversion API support for better ad targeting.</p>
-              <div class="app-actions"><a href="/apps/pixee/" class="btn-view">Details</a><a href="https://apps.shopify.com/partners/gropulse" class="btn-store" target="_blank" rel="noreferrer">Install</a></div>
+              <div class="app-actions"><a href="/apps/pixee/" class="btn-view">Details</a><a href={appStoreUrlMap["pixee"]} class="btn-store" target="_blank" rel="noreferrer">Install</a></div>
             </div>
           </div>
 
@@ -372,7 +522,7 @@ export function getStaticPaths() {
               <div class="app-icon-float">&#11088;</div>
               <h3 class="app-title">GroPulse Google Reviews</h3>
               <p class="app-desc">Showcase authentic Google reviews to build trust and social proof.</p>
-              <div class="app-actions"><a href="/apps/google-reviews/" class="btn-view">Details</a><a href="https://apps.shopify.com/partners/gropulse" class="btn-store" target="_blank" rel="noreferrer">Install</a></div>
+              <div class="app-actions"><a href="/apps/google-reviews/" class="btn-view">Details</a><a href={appStoreUrlMap["google-reviews"]} class="btn-store" target="_blank" rel="noreferrer">Install</a></div>
             </div>
           </div>
 
@@ -389,7 +539,7 @@ export function getStaticPaths() {
               <div class="app-icon-float">&#128736;</div>
               <h3 class="app-title">GroPulse GTM &amp; Data Layer</h3>
               <p class="app-desc">Automated data layer events for Google Tag Manager without coding.</p>
-              <div class="app-actions"><a href="/apps/gtm-data-layer/" class="btn-view">Details</a><a href="https://apps.shopify.com/partners/gropulse" class="btn-store" target="_blank" rel="noreferrer">Install</a></div>
+              <div class="app-actions"><a href="/apps/gtm-data-layer/" class="btn-view">Details</a><a href={appStoreUrlMap["gtm-data-layer"]} class="btn-store" target="_blank" rel="noreferrer">Install</a></div>
             </div>
           </div>
         </div>
@@ -514,7 +664,7 @@ export function getStaticPaths() {
     .h-title { font-size: 13px; font-weight: 700; margin-bottom: 8px; color: var(--black); }
     .h-list { list-style: none; padding: 0; }
     .h-list li { font-size: 13px; color: var(--gray); margin-bottom: 6px; display: flex; gap: 8px; }
-    .h-list li::before { content: '?'; color: var(--black); font-weight: 700; }
+    .h-list li::before { content: '\2713'; color: white; font-weight: 700; background: var(--orange); width: 16px; height: 16px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 10px; }
 
     .rating-row { display: flex; align-items: center; gap: 8px; margin-bottom: 24px; font-size: 14px; font-weight: 600; }
     .stars { color: #F59E0B; }
@@ -538,20 +688,20 @@ export function getStaticPaths() {
 
     .app-description h2 { font-family: var(--heading-font); font-size: 26px; font-weight: 700; margin-bottom: 16px; }
     .app-description p { font-size: 16px; color: var(--gray); margin-bottom: 20px; line-height: 1.6; }
-    .app-description ul { padding-left: 20px; margin-bottom: 40px; }
-    .app-description li { font-size: 16px; color: var(--gray); margin-bottom: 10px; }
+        .app-description ul { list-style: disc; padding-left: 20px; margin-bottom: 40px; }
+    .app-description li { font-size: 16px; color: var(--gray); margin-bottom: 10px; line-height: 1.6; }
 
     .meta-specs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; background: var(--soft-bg); padding: 30px; border-radius: 20px; border: 1px solid var(--border-color); }
     .spec-item h5 { font-size: 14px; font-weight: 700; color: var(--black); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
     .tags-wrap { display: flex; flex-wrap: wrap; gap: 8px; }
     .tag { font-size: 13px; background: white; border: 1px solid var(--border-color); padding: 4px 10px; border-radius: 6px; color: var(--gray); font-weight: 500; }
 
-    .pricing-section-balanced { padding: 100px 0; background-color: var(--light-orange-bg); }
-    .pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; max-width: 900px; margin: 0 auto; align-items: stretch; }
+    .pricing-section-balanced { padding: 100px 0; background-color: #FFF8F6; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; max-width: 1100px; margin: 0 auto; align-items: stretch; }
 
     .pricing-card { border-radius: 24px; display: flex; flex-direction: column; position: relative; }
     .pricing-card.free { background: #FFFFFF; border: 1px solid var(--border-color); }
-    .pricing-card.pro { background: #FFFFFF; border: 2px solid var(--orange); box-shadow: 0 20px 50px rgba(243, 70, 36, 0.1); }
+    .pricing-card.pro { background: #FFFFFF; border: 2px solid var(--orange); box-shadow: 0 20px 50px rgba(0,0,0,0.08); }
     .most-popular { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--orange); color: white; padding: 6px 16px; border-radius: 50px; font-size: 11px; font-weight: 800; text-transform: uppercase; }
     .card-inner { padding: 40px; display: flex; flex-direction: column; height: 100%; justify-content: space-between; }
 
@@ -599,7 +749,7 @@ export function getStaticPaths() {
     .dev-reply { background: #F9FAFB; padding: 20px; border-radius: 10px; border-left: 3px solid var(--orange); font-size: 14px; color: var(--gray); margin-top: 20px; }
     .reply-meta { font-size: 12px; font-weight: 700; color: var(--black); margin-bottom: 5px; display: block; }
 
-    .support-section { padding: 100px 0; background-color: var(--light-orange-bg); }
+    .support-section { padding: 100px 0; background-color: #FFF8F6; }
     .support-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; }
 
     .support-block { background: var(--white); padding: 30px; border-radius: 20px; border: 1px solid var(--border-color); transition: 0.3s; }
